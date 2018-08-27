@@ -1,0 +1,14 @@
+.product-container {
+  display: flex;
+  flex-direction: column;
+
+
+  &--left {
+    position: absolute;
+    top: 470px;
+    left: 130px;
+
+    transform: translateX(-100%);
+    z-index: 5;
+  }
+}

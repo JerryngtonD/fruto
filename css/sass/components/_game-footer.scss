@@ -1,0 +1,26 @@
+.game-footer {
+	display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 1rem 0.5rem 2rem;
+
+  h3 {
+    margin-bottom: 15px;
+  }
+
+  .btn-print {
+    font-size: 18px;
+    font-weight: 900;
+   	/*width: 35px;*/
+    height: 35px;
+    padding: 3px 10px;
+  	border-style: none;
+  	border-radius: 5px;
+    color: orange;
+    background-color: #fff;
+    cursor: pointer;
+    outline: none;
+  }
+}

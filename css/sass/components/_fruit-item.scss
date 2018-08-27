@@ -1,0 +1,112 @@
+.fruit-item {
+	position: absolute;
+  width: 200px;
+  height: 200px;
+  /*background-color: orange;*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+
+  &__left-1 {
+    top: 700px;
+    right: 120px;
+    background-image: url("../src/image/left-fruit-1.png");
+  }
+
+  &__left-2 {
+    top: 950px;
+    width: 150px;
+    height: 80px;
+    right: 210px;
+    background-image: url("../src/image/left-fruit-double-2.png");
+  }
+
+  &__left-3 {
+    top: 1310px;
+    width: 50px;
+    height: 50px;
+    right: 260px;
+    background-image: url("../src/image/left-fruit-one-3.png");
+  }
+
+  &__left-4 {
+    left: 0;
+    bottom: -800px;
+    width: 115px;
+    background-image: url("../src/image/left-fruit-4.png");
+  }
+
+  &__right-1 {
+    top: 370px;
+    right: -180px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../src/image/rigth-fruit-one-1.png");
+    z-index: 2;
+  }
+
+  &__right-2 {
+    top: 800px;
+    right: -120px;
+    width: 160px;
+    height: 165px;
+    background-image: url("../src/image/right-fruit-2.png");
+  }
+
+  &__right-3 {
+    top: 1300px;
+    right: -200px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../src/image/right-fruit-one-1-3.png");
+  }
+
+  &__right-4 {
+    top: 1400px;
+    right: -170px;
+    width: 50px;
+    height: 50px;
+    background-image: url("../src/image/right-fruit-one-2-4.png");
+  }
+
+  &__right-5 {
+    top: 1480px;
+    right: -70px;
+    width: 180px;
+    height: 120px;
+    background-image: url("../src/image/right-fruit-group-6.png");
+  }
+
+  &__right-6 {
+    top: 1600px;
+    right: 0;
+    width: 135px;
+    height: 205px;
+    background-image: url("../src/image/right-fruit-7.png");
+  }
+
+  &__right-7 {
+    top: 2000px;
+    right: 0;
+    width: 70px;
+    height: 225px;
+    background-image: url("../src/image/right-fruit-8.png");
+  }
+
+  &__right-8 {
+    top: 2150px;
+    right: -50px;
+    width: 230px;
+    height: 290px;
+    background-image: url("../src/image/right-fruit-9.png");
+  }
+
+  &__right-9 {
+    top: 1450px;
+    right: -80px;
+    width: 60px;
+    height: 60px;
+    background-image: url("../src/image/right-fruit-one-3-5.png");
+  }
+}

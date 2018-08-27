@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Карта летних приключений</title>
+  <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+  <section class="map-adventures">
+    <div class="wrapper">
+      <h1 class="main-title">Карта летних приключений <span>с мамой и папой</span></h1>
+      <ul class="adventures-list">
+        <li class="adventures-list__item"><a href="game.html" class="adventures-list__link">Собираем бизиборд</a></li>
+        <li class="adventures-list__item"><a href="#" class="adventures-list__link">Рисуем ладошками</a></li>
+        <li class="adventures-list__item"><a href="#" class="adventures-list__link">Печем печенье</a></li>
+        <li class="adventures-list__item"><a href="#" class="adventures-list__link">Играем в бизиборд</a></li>
+        <li class="adventures-list__item"><a href="#" class="adventures-list__link">Ищем сокровища</a></li>
+        <li class="adventures-list__item"><a href="#" class="adventures-list__link">Играем в спасателей</a></li>
+        <li class="adventures-list__item"><a href="#" class="adventures-list__link">Строим замок</a></li>
+        <li class="adventures-list__item"><a href="#" class="adventures-list__link">Собираем ягоды</a></li>
+        <li class="adventures-list__item"><a href="#" class="adventures-list__link">Рисуем дом</a></li>
+        <li class="adventures-list__item"><a href="#" class="adventures-list__link">Ищем зверят</a></li>
+      </ul>
+    </div>
+  </section>
+  <script>
+
+    function popitup(url,windowName) {
+        newwindow=window.open(url,windowName,'height=600,width=600');
+        if (window.focus) {newwindow.focus()}
+        return false;
+    }
+
+
+    let gameLinks = document.querySelectorAll('a');
+    console.log(gameLinks);
+    for (let linkCounter = 0; linkCounter < gameLinks.length; linkCounter++) {
+        gameLinks[linkCounter].addEventListener('click', function (evt) {
+            evt.preventDefault();
+            let link = gameLinks[linkCounter].getAttribute('href');
+            let windowName = gameLinks[linkCounter].getAttribute('innetHTML');
+            popitup(link, windowName  )
+            //window.open(gameLinks[linkCounter].getAttribute('href'),"_self")
+        })
+    }
+  </script>
+</body>
+</html>

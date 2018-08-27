@@ -1,0 +1,57 @@
+.fruits {
+    /*background-image: url('../src/image/fruits.png');
+    background-repeat: no-repeat;
+    width: 330px;
+    height: 370px;
+    position: absolute;
+    bottom: 60px;
+    right: -10px;*/
+    
+    position: absolute;
+    background-image: url(../src/image/main-product-right.png);
+    max-width: 660px;
+    width: 39%;
+    height: 770px;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: center;
+    bottom: 0px;
+    right: -165px;
+
+    @media screen and (min-width: 1281px) {
+      max-width: 40vw;
+      /*max-height: 470px;*/
+      max-height: 50%;
+      bottom: 50px;
+      right: -220px;
+      height: 100%;
+    }
+
+    @media screen and (min-width: 1380px) {
+      /*right: 65px;*/
+    }
+
+    @media screen and (min-width: 2500px) {
+      max-height: 785px;
+      max-width: 670px;
+      right: -320px;
+    }
+
+    @media screen and (max-width: 1300px) {
+	    height: 350px;
+	    right: -165px;
+      /*max-width: 330px;*/
+      width: 100%;
+
+      max-width: 40vw;
+      max-height: 470px;
+  	}
+
+    @media screen and (max-width: 667px) {
+      max-width: 195px;
+      max-height: 170px;
+      right: -70px;
+    }
+}
+

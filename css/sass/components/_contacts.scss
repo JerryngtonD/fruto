@@ -1,0 +1,65 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  
+  
+  background-repeat: no-repeat;
+
+  &--main {
+    justify-content: space-around;
+    width: 85px;
+    height: 195px;
+    bottom: 0;
+    background-image: url(../src/image/table/table-icon.png);
+  }
+
+  &--pop {
+    justify-content: center;
+    width: 80px;
+    height: 265px;
+    top: 220px;
+    right: -80px;
+    background-image: url(../src/image/icon/pop-up-social.png);
+    padding-top: 70px;
+
+    .contacts__link:not(last-child) {
+      margin-bottom: 25px;
+    }
+  }
+
+  z-index: 2;
+
+  &__link {
+    display: block;
+    width: 30px;
+    height: 30px;
+   /* background-color: #345;*/
+    background-position: center;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: transform .3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &--fb {
+      background-image: url(../src/image/icon/fb.svg);
+    }
+
+    &--vk {
+      background-image: url(../src/image/icon/vk.svg);
+    }
+
+    &--ok {
+      background-image: url(../src/image/icon/odnokl.svg);
+    }
+  }
+}
+
+/*.contacts--pop .contacts__link:not(last-child); {
+  margin-bottom: 10px;
+}*/

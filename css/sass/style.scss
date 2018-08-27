@@ -1,0 +1,67 @@
+@import 'variables';
+@import 'fonts';
+@import 'components/_page-header';
+@import 'components/_page-main.scss';
+@import 'components/_bg-wrapper';
+@import 'components/_adventure-map';
+@import 'components/_product-content';
+@import 'components/_fruits';
+@import 'components/_bee';
+@import 'components/_map_banner.scss';
+@import 'components/_main-nav';
+@import 'components/adventure-map__button.scss';
+
+@import 'components/game-block';
+@import 'components/game-information';
+@import 'components/rules-info';
+@import 'components/product-info';
+@import 'components/game-footer';
+@import 'components/fruit-item';
+@import 'components/overlay';
+
+@import 'components/_player-map.scss';
+@import 'components/_product-container.scss';
+
+@import 'components/links-list';
+@import 'components/adventures-list';
+@import 'components/map-adventures';
+@import 'components/_product-item.scss';
+@import 'components/_link-area.scss';
+@import 'components/_fruits-group.scss';
+@import 'components/_contacts.scss';
+@import 'components/_level.scss';
+@import 'components/_move-wrapper.scss';
+
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  height: 100%;
+  flex-direction: column;
+  font-family: 'Myriad Pro', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $main-color;
+  background-color: $main-bg-color;
+  box-sizing: border-box;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}

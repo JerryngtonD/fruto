@@ -1,0 +1,116 @@
+.bee {
+  /*position: absolute;
+  left: 150px;
+  background-image: url('../src/image/bee.png');
+  background-repeat: no-repeat;
+  width: 90px;
+  height: 90px;
+  top: 240px;
+  max-height: 150px;
+  z-index: 2;*/
+
+  position: absolute;
+  left: -40px;
+  top: 29vh;
+  background-image: url(../src/image/bee-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  width: 520px;
+  height: 270px;
+  top: 250px;
+  /* max-height: 150px; */
+  z-index: 3;
+
+  @media screen and (min-width: 1280px) {
+    /*top: 32vh;*/
+    /*width: 300px;
+    height: 200px;*/
+    left: -22%;
+    top: 200px;
+    height: 203px;
+  }
+
+  @media screen and (min-width: 1880px) {
+    /*top: 400px;
+    width: 450px;
+    height: 320px;*/
+  }
+
+  @media screen and (min-width: 2240px) {
+    height: 220px;
+    left: -23%;
+    top: 225px;
+  }
+
+  @media screen and (min-width: 2500px) {
+    height: 270px;
+    left: -29%;
+    top: 165px;
+  }
+
+  @media screen and (max-width: 1280px) {
+    top: 150px;
+    width: 250px;
+    height: 130px;
+    left: -240px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    top: 87px;
+    left: -155px;
+    width: 250px;
+    height: 118px;
+  }
+
+  @media screen and (max-width: 667px) {
+    top: 155px;
+    left: -107px;
+    width: 124px;
+    height: 75px;
+  }
+
+ /* &:before {
+    content: "";
+    position: absolute;
+    background-image: url('../src/image/bee-path.svg');
+    background-repeat: no-repeat;
+    width: 170px;
+    height: 60px;
+    right: 70px;
+    top: 90px;
+  }*/
+}
+
+.bee--promo {
+  background-image: url('../src/image/bee+sign.png');
+  width: 230px;
+  top: 240px;
+  max-height: 280px;
+
+
+  &:before {
+    display: none;
+  }
+}
+
+.player-map .bee {
+  top: 0;
+  position: absolute;
+  width: 220px;
+  height: 250px;
+  left: -110px;
+  z-index: 10;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 221px;
+    top: 139px;
+    left: 0;
+    height: 110px;
+    background-image: url(../src/image/table/promo-table.png);
+    background-size: cover;
+    z-index: -12;
+  }
+}

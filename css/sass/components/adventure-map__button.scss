@@ -1,0 +1,51 @@
+.adventure-map__button {
+  background-image: url('../src/image/button-green.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: contain;
+  background-size: contain;
+  font-family: 'KiddyKitty', sans-serif;
+  font-size: 28px;
+  background-color: transparent;
+  border-style: none;
+  color: white;
+  font-weight: 300;
+  /*height: 70px;*/
+  padding: 8px 95px;
+  margin-top: 50px;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  transition: background .2s ease;
+  line-height: 100px;
+
+  @media screen and (min-width: 2500px) {
+    margin-top: 80px;
+    font-size: 36px;
+    /*height: 100px;*/
+  }
+
+  @media screen and (max-width: 1280px) {
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 8px 50px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 30px;
+  }
+
+  @media screen and (max-width: 667px) {
+    font-size: 10px;
+    /*height: 25px;*/
+    margin-top: 10px;
+    padding-top: 6px;
+    line-height: 15px;
+  }
+
+  &:hover, &:focus {
+    background-image: url('../src/image/button.png');
+  }
+}

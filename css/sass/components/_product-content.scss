@@ -1,0 +1,75 @@
+.product-content {
+  /*background-image: url('../src/image/fruto-products.png');
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  width: 400px;
+  height: 370px;
+  position: absolute;
+  bottom: 90px;
+  left: 30px;*/
+
+  background-image: url(../src/image/main-product-left.png);
+  background-repeat: no-repeat;
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-position: center;
+  max-width: 660px;
+  width: 35%;
+  height: 610px;
+  position: absolute;
+  bottom: 110px;
+  left: -260px;
+  z-index: 2;
+
+  @media screen and (min-width: 1280px) {
+    /*max-height: 325px;
+    max-width: 300px;*/
+    max-width: 30vw;
+    max-height: 23vw;
+    bottom: 120px;
+    left: -120px;
+  }
+
+  @media screen and (min-width: 1281px) {
+    max-width: 40vw;
+    /*max-height: 470px;*/
+    max-height: 50%;
+  }
+
+  @media screen and (min-width: 1550px) {
+   /* left: 100px;*/
+  }
+
+  @media screen and (min-width: 2500px) {
+    max-width: 670px;
+    max-height: 750px;
+    height: 100%;
+    width: 100%;
+    left: -350px;
+  }
+
+  @media screen and (max-width: 1280px) {
+    max-height: 375px;
+    max-width: 360px;
+    /*width: 100%;
+    height: 100%;*/
+    bottom: 53px;
+    left: -130px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    max-width: 315px;
+    width: 100%;
+    height: 100%;
+    bottom: 53px;
+    left: -95px;
+  }
+
+  @media screen and (max-width: 667px) {
+    max-width: 180px;
+    max-height: 170px;
+    left: -80px;
+    bottom: 25px;
+  }
+}

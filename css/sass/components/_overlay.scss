@@ -1,0 +1,14 @@
+.overlay {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /* background-color: rgba(0, 0, 0, 0.7); */
+  background: url(../src/image/pop-up-blur.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: none;
+  z-index: 10;
+}

@@ -1,0 +1,47 @@
+.bg-wrapper--welcome {
+  position: relative;
+  background-image: url('../src/image/main-bg-tree.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+ /* min-height: 980px;*/
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+
+  @media screen and (min-width: 1281px) {
+    padding-top: 180px;
+  }
+
+  @media screen and (max-width: 1280px) {
+    padding-top: 180px;
+  }
+
+  @media screen and (max-width: 668px) {
+    padding-top: 84px;
+  }
+}
+
+.welcome-footer-bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 17vw;
+  background-image: url('../src/image/main-bg-wood.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.bg-wrapper--map {
+  background-image: url('../src/image/bg-wood.jpg');
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  min-height: 100vh;
+  height: 100%;
+  overflow: hidden;
+}

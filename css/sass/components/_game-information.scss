@@ -1,0 +1,42 @@
+.game-information {
+  margin-top: 40px;
+
+  .game-header {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;*/
+    /*max-width: 500px;*/
+    /*height: 280px;
+    margin: 2rem auto;
+    object-fit: cover;*/
+    margin-bottom: 30px;
+   /* background-color: lightgreen;*/
+  }
+
+  .animation {
+    max-width: 590px;
+    width: 100%;
+    min-height: 385px;
+    background-image: url("../src/image/animation/example-animation.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+  }
+
+  .list-items {
+    max-width: 240px;
+    margin-left: 45px;
+    text-align: left;
+
+    /*list-style-type: none;*/
+
+    &__item {
+      font-size: 2.2rem;
+      line-height: 1.4;
+    }
+    span {
+      font-size: 22px;
+      font-weight: 900;
+    }
+  }
+}

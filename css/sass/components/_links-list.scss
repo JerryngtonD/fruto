@@ -1,0 +1,18 @@
+.links-list {
+	
+  .link {
+    display: inline-block;
+    line-height: 35px;
+    width: 35px;
+    height: 35px;
+    text-decoration: none;
+    color: #fff;
+    background-color: brown;
+    box-shadow: 0 0 2px 3px rgba(255, 255, 255, 1);
+    border-radius: 5px;
+
+    &:not(last-child) {
+      margin-right: 10px;
+    }
+  }
+}

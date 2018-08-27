@@ -1,0 +1,158 @@
+.product-info {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-bottom: 4rem;
+
+  &__text {
+    max-width: 70%;
+    text-align: left;
+
+    @media screen and (max-width: 550px) {
+      max-width: 100%;
+    }
+
+    .description {
+      display: inline-block;
+      max-width: 400px;
+    }
+  }
+
+  &__image {
+    position: relative;
+    max-width: 40%;
+    height: 460px;
+
+    /*&::after {
+      position: absolute;
+      content: "";
+      width: 17rem;
+      height: 17rem;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background-color: orange;
+    }*/
+  }
+
+  .btn-more {
+    position: relative;
+    text-align: left;
+    padding-left: 45px;
+    font-size: 1.8rem;
+    /*padding: 1rem 2rem;*/
+    /*margin-top: 2rem;*/
+    margin-right: 20px;
+    height: 60px;
+    width: 250px;
+    text-transform: lowercase;
+    color: #4a95d0;
+    background-color: transparent;
+    background-image: url(../src/image/buttons/fill-button.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border-style: none;
+    /*border-radius: 2rem;*/
+    cursor: pointer;
+    outline: none;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 50px;
+      top: 50%;
+      right: 30px;
+      transform: translateY(-50%);
+      background-image: url("../src/image/buttons/logo-button.png");
+    }
+
+    &:hover {
+      color: #fff;
+      /*background-color: green;*/
+    }
+  }
+
+  .btn-print {
+    position: relative;
+    font-size: 18px;
+    font-weight: 900;
+    width: 100px;
+    height: 60px;
+    padding: 3px 10px;
+    border-style: none;
+    border-radius: 5px;
+    color: orange;
+    background-color: transparent;
+    background-image: url(../src/image/buttons/fill-button-print.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    cursor: pointer;
+    outline: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 37px;
+      top: 50%;
+      left: 50%;
+      background-image: url(../src/image/buttons/printer-sign.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      -webkit-background-size: contain;
+      background-size: contain;
+      transform: translate(-50%, -50%);
+
+    }
+  }
+}
+
+.img-block {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  margin-left: 50px;
+  width: 215px;
+  height: 245px;
+  background-image: url(../src/image/bee/pop-up-bee.png);
+
+  &:hover &__description {
+    opacity: 1;
+  }
+
+  &__description {
+    position: absolute;
+    font-size: 18px;
+    font-family: 'KiddyKitty', sans-serif;
+    top: -160px;
+    left: -225px;
+    width: 360px;
+    height: 210px;
+    text-align: center;
+    padding-top: 55px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity .3s cubic-bezier(.19,.86,.41,.68);
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background-image: url("../src/image/cloud/promo-cloud-full.png");
+      background-repeat: no-repeat;
+      -webkit-background-size: contain;
+      background-size: contain;
+      z-index: -1;
+    }
+  }
+}
