@@ -82,7 +82,7 @@
     /*right: -240px;
     top: 160px;*/
 
-    &:before {
+ /*   &:before {
       content: "";
       position: absolute;
       background-image: url(../src/image/path-1.png);
@@ -102,7 +102,7 @@
       height: 100px;
       top: 40px;
       left: 110px;
-    }
+    }*/
   }
 
   &__item-2 {
@@ -115,7 +115,7 @@
     /*right: -570px;
     top: 10px;*/
 
-    &::after {
+/*    &::after {
       content: "";
       position: absolute;
       background-image: url(../src/image/path-3.png);
@@ -124,7 +124,7 @@
       height: 240px;
       top: 90px;
       left: -30px;
-    }
+    }*/
   }
 
   &__item-3 {
@@ -139,7 +139,7 @@
     z-index: 2;
     left: -30px;
 
-    &:after {
+/*    &:after {
       content: "";
       position: absolute;
       background-image: url(../src/image/path-4.png);
@@ -148,7 +148,7 @@
       height: 230px;
       top: 30px;
       left: -260px;
-    }
+    }*/
   }
 
   &__item-4 {
@@ -163,7 +163,7 @@
     right: -110px;
     top: 190px;*/
 
-    &:after {
+/*    &:after {
       content: "";
       position: absolute;
       background-image: url(../src/image/path-5.png);
@@ -172,7 +172,7 @@
       height: 230px;
       top: 125px;
       left: 160px;
-    }
+    }*/
   }
 
   &__item-5 {
@@ -187,7 +187,7 @@
     right: -560px;
     top: 20px;*/
 
-    &:after {
+/*    &:after {
       content: "";
       position: absolute;
       background-image: url(../src/image/path-6.png);
@@ -196,7 +196,7 @@
       height: 230px;
       top: 80px;
       left: -10px;
-    }
+    }*/
   }
 
   &__item-6 {
@@ -210,7 +210,7 @@
     right: -420px;
     top: 70px;*/
 
-    &::after {
+/*    &::after {
       position: absolute;
       content: "";
       background-image: url(../src/image/path-7.png);
@@ -219,7 +219,7 @@
       height: 260px;
       top: 50px;
       left: -200px;
-    }
+    }*/
   }
 
   &__item-7 {
@@ -234,7 +234,7 @@
     right: -250px;
     top: 230px;*/
 
-    &:after {
+/*    &:after {
       content: "";
       position: absolute;
       background-image: url(../src/image/path-8.png);
@@ -243,6 +243,6 @@
       height: 260px;
       top: 120px;
       left: 100px;
-    }
+    }*/
   }
 }

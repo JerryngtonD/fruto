@@ -1,0 +1,76 @@
+.svg-path {
+  position: absolute;
+  .path {
+    animation: dash 4s linear reverse infinite;
+    stroke-dasharray: 20;
+  }
+
+  @keyframes dash {
+    to {
+      stroke-dashoffset: 300;
+    }
+  }
+}
+
+
+.level__item-1 {
+
+  .svg-path--to {
+    top: 40px;
+    left: 110px;
+  }
+
+  .svg-path--from {
+    top: -45px;
+    left: -125px;
+  }
+}
+
+.level__item-2 {
+
+  .svg-path--to {
+    top: 90px;
+    left: -30px;
+  }
+}
+
+.level__item-3 {
+
+  .svg-path--to {
+    top: 30px;
+    right: 165px;
+  }
+}
+
+.level__item-4 {
+
+  .svg-path--to {
+    top: 125px;
+    left: 155px;
+  }
+}
+
+.level__item-5 {
+
+  .svg-path--to {
+    top: 85px;
+    left: 5px;
+  }
+}
+
+.level__item-6 {
+
+  .svg-path--to {
+    top: 50px;
+    left: -200px;
+  }
+}
+
+.level__item-7 {
+
+  .svg-path--to {
+    top: 120px;
+    left: 100px;
+  }
+}
+
