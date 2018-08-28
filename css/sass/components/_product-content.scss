@@ -37,8 +37,8 @@
     max-height: 50%;
   }
 
-  @media screen and (min-width: 1550px) {
-   /* left: 100px;*/
+  @media screen and (min-width: 1800px) {
+    left: -190px;
   }
 
   @media screen and (min-width: 2500px) {
@@ -59,11 +59,12 @@
   }
 
   @media screen and (max-width: 1024px) {
-    max-width: 315px;
+    max-width: 336px;
+    max-height: 314px;
     width: 100%;
     height: 100%;
     bottom: 53px;
-    left: -95px;
+    left: -80px;
   }
 
   @media screen and (max-width: 667px) {

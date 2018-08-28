@@ -123,6 +123,18 @@
   height: 245px;
   background-image: url(../src/image/bee/pop-up-bee.png);
 
+  &::before {
+    width: 200px;
+    height: 700px;
+    position: absolute;
+    content: "";
+    left: 191px;
+    top: -610px;
+    background-image: url(../src/image/bee/bee-path-popup.png);
+    background-repeat: no-repeat;
+
+  }
+
   &:hover &__description {
     opacity: 1;
   }

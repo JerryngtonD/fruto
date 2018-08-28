@@ -24,12 +24,12 @@
       /*max-height: 470px;*/
       max-height: 50%;
       bottom: 50px;
-      right: -220px;
+      right: -140px;
       height: 100%;
     }
 
-    @media screen and (min-width: 1380px) {
-      /*right: 65px;*/
+    @media screen and (min-width: 1800px) {
+      right: -165px;
     }
 
     @media screen and (min-width: 2500px) {
@@ -38,14 +38,21 @@
       right: -320px;
     }
 
-    @media screen and (max-width: 1300px) {
-	    height: 350px;
-	    right: -165px;
+    @media screen and (max-width: 1280px) {
+      height: 356px;
+      top: 270px;
+      right: -140px;
+    }
+
+    @media screen and (max-width: 1024px) {
+	    /*height: 350px;*/
+	    right: -118px;
       /*max-width: 330px;*/
       width: 100%;
+      top: 230px;
 
-      max-width: 40vw;
-      max-height: 470px;
+      max-width: 306px;
+      max-height: 333px;
   	}
 
     @media screen and (max-width: 667px) {

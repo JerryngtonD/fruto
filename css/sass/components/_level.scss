@@ -34,6 +34,10 @@
   &__item {
     position: relative;
 
+    img {
+      max-width: 100%;
+    }
+
   /*  span {
       display: inline-block;
       position: absolute;
@@ -102,7 +106,7 @@
   }
 
   &__item-2 {
-    background-image: url(../src/image/level-2.png);
+    //background-image: url(../src/image/level-2.png);
     background-repeat: no-repeat;
     width: 150px;
     height: 120px;
@@ -124,7 +128,7 @@
   }
 
   &__item-3 {
-    background-image: url(../src/image/level-3.png);
+    //background-image: url(../src/image/level-3.png);
     background-repeat: no-repeat;
     width: 150px;
     height: 120px;
@@ -133,6 +137,7 @@
     right: -380px;
     top: 120px;*/
     z-index: 2;
+    left: -30px;
 
     &:after {
       content: "";
@@ -147,12 +152,13 @@
   }
 
   &__item-4 {
-    background-image: url(../src/image/level-4.png);
+    //background-image: url(../src/image/level-4.png);
     background-repeat: no-repeat;
     width: 150px;
     height: 90px;
     margin-right: 35%;
     position: relative;
+    margin-top: -75px;
   /*  position: relative;
     right: -110px;
     top: 190px;*/
@@ -164,13 +170,13 @@
       background-repeat: no-repeat;
       width: 300px;
       height: 230px;
-      top: 55px;
-      left: 120px;
+      top: 125px;
+      left: 160px;
     }
   }
 
   &__item-5 {
-    background-image: url(../src/image/level-5.png);
+    //background-image: url(../src/image/level-5.png);
     background-repeat: no-repeat;
     width: 200px;
     height: 150px;
@@ -217,7 +223,7 @@
   }
 
   &__item-7 {
-    background-image: url(../src/image/level-7.png);
+    //background-image: url(../src/image/level-7.png);
     background-repeat: no-repeat;
     width: 100px;
     height: 150px;

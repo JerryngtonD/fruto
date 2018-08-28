@@ -4,6 +4,7 @@ var closePopupBtn = document.querySelector('.btn-close');
 var overlay = document.querySelector('.overlay');
 var pageHeaderToggle = document.querySelector('.page-header__toggle');
 var mainNav = document.querySelector('.main-nav');
+var moveBlock = document.querySelector('.move-wrapper');
 
 function getPosition(el) {
     var xPos = 0;
@@ -64,7 +65,7 @@ function openLevelPopup(level) {
             productSrc.setAttribute('src', './' + levelInfo.productSrc);
             productText.innerHTML = levelInfo.productText;
 
-
+            moveBlock.style.display = 'none';
             overlay.style.display = 'block';
             gameBlock.style.display = "block";
         }
@@ -78,6 +79,7 @@ levelItems.forEach(function(levelItem) {
 
 
 function closeAndClearPopup() {
+    moveBlock.style.display = 'block';
     overlay.style.display = 'none';
     var ingredients = gameBlock.querySelector('.list-items');
     ingredients.innerHTML = '';
