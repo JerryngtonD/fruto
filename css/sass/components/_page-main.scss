@@ -60,6 +60,12 @@
     background-position: -11px 130px;
   }
 
+  @media screen and (max-width: 450px) {
+    background-image: url(../src/image/background/bg-main-map.png);
+    background-position: center bottom;
+    min-height: 660px;
+  }
+
 
  /* padding-top: 200px;
   object-fit: contain;
@@ -68,6 +74,23 @@
 
   &__content {
     position: absolute;
+  }
+
+  .copy-right {
+    display: none;
+    position: absolute;
+    font-size: 10px;
+    width: 300px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 13px;
+    color: #000;
+
+    @media screen and (max-width: 450px) {
+      display: block;
+    }
   }
 }
 
