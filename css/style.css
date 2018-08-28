@@ -211,8 +211,30 @@
     min-height: 290px;
     background-position: -11px 130px; } }
 
+@media screen and (max-width: 450px) {
+  .page-main {
+    background-image: url(../src/image/background/bg-main-map.png);
+    background-position: center bottom;
+    min-height: 660px; } }
+
 .page-main__content {
   position: absolute; }
+
+.page-main .copy-right {
+  display: none;
+  position: absolute;
+  font-size: 10px;
+  width: 300px;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 13px;
+  color: #000; }
+
+@media screen and (max-width: 450px) {
+  .page-main .copy-right {
+    display: block; } }
 
 .adventure-page {
   padding-top: 180px; }
@@ -241,6 +263,10 @@
   .bg-wrapper--welcome {
     padding-top: 84px; } }
 
+@media screen and (max-width: 450px) {
+  .bg-wrapper--welcome {
+    padding-top: 0; } }
+
 .welcome-footer-bg {
   position: absolute;
   left: 0;
@@ -252,6 +278,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   z-index: 1; }
+
+@media screen and (max-width: 450px) {
+  .welcome-footer-bg {
+    height: 43vh; } }
 
 .bg-wrapper--map {
   background-image: url("../src/image/bg-wood.jpg");
@@ -310,6 +340,10 @@
   .adventure-map {
     margin-bottom: 60px; } }
 
+@media screen and (max-width: 450px) {
+  .adventure-map {
+    margin-bottom: 76%; } }
+
 .adventure-map__button {
   font-size: 20px;
   font-weight: 100;
@@ -358,6 +392,11 @@
   .adventure-map__wrapper {
     padding-top: 175px; } }
 
+@media screen and (max-width: 450px) {
+  .adventure-map__wrapper {
+    padding-top: 0px;
+    padding-bottom: 30px; } }
+
 .adventure-map__wrapper--content {
   width: 100%; }
 
@@ -404,6 +443,13 @@
     line-height: 14px;
     max-width: 190px;
     letter-spacing: 0; } }
+
+@media screen and (max-width: 450px) {
+  .adventure-map__description {
+    font-size: 14px;
+    max-width: 375px;
+    margin-top: 20px;
+    margin-bottom: 30px; } }
 
 .adventure-map__wrapper--content {
   position: relative;
@@ -484,6 +530,14 @@
     left: -80px;
     bottom: 25px; } }
 
+@media screen and (max-width: 450px) {
+  .product-content {
+    background-image: url(../src/image/pack.png);
+    max-width: 153px;
+    max-height: 230px;
+    left: -5px;
+    bottom: 100px; } }
+
 .fruits {
   /*background-image: url('../src/image/fruits.png');
     background-repeat: no-repeat;
@@ -544,6 +598,13 @@
     max-width: 195px;
     max-height: 170px;
     right: -70px; } }
+
+@media screen and (max-width: 450px) {
+  .fruits {
+    max-height: 230px;
+    width: 100%;
+    right: -80px;
+    top: 345px; } }
 
 .bee {
   /*position: absolute;
@@ -630,6 +691,13 @@
     left: -107px;
     width: 124px;
     height: 75px; } }
+
+@media screen and (max-width: 450px) {
+  .bee {
+    width: 128px;
+    height: 105px;
+    left: -41px;
+    top: 260px; } }
 
 .bee--promo {
   background-image: url("../src/image/bee+sign.png");
@@ -752,6 +820,10 @@
     max-width: 245px;
     height: 65px; } }
 
+@media screen and (max-width: 450px) {
+  .map-banner {
+    max-width: 249px; } }
+
 .map-banner--adventure {
   max-width: 615px;
   width: 100%;
@@ -851,6 +923,12 @@
     margin-top: 10px;
     padding-top: 6px;
     line-height: 15px; } }
+
+@media screen and (max-width: 450px) {
+  .adventure-map__button {
+    height: 37px;
+    font-size: 12px;
+    padding-top: 13px; } }
 
 .adventure-map__button:hover, .adventure-map__button:focus {
   background-image: url("../src/image/button.png"); }

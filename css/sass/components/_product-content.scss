@@ -73,4 +73,12 @@
     left: -80px;
     bottom: 25px;
   }
+
+  @media screen and (max-width: 450px) {
+    background-image: url(../src/image/pack.png);
+    max-width: 153px;
+    max-height: 230px;
+    left: -5px;
+    bottom: 100px;
+  }
 }
