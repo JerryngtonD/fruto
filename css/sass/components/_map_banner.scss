@@ -61,6 +61,10 @@
     height: 65px;
   }
 
+  @media screen and (max-width: 450px) {
+    max-width: 249px;
+  }
+
   &--adventure {
     max-width: 615px;
     width: 100%;
