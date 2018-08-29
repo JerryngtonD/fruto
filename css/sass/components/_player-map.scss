@@ -31,6 +31,10 @@
   margin-bottom: 50px;
   border-radius: 15px;
 
+  @media screen and (max-width: 1000px)  {
+    max-width: 90vw;
+  }
+
   .block-header {
     position: absolute;;
     width: 100%;
@@ -39,5 +43,6 @@
     left: 0;
     background-color: rgba(0, 0, 0, .3);
     background: url(../src/image/game-paper-top.png) center top no-repeat;
+    background-size: contain;
   }
 }

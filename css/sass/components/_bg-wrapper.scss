@@ -52,4 +52,8 @@
   min-height: 100vh;
   height: 100%;
   overflow: hidden;
+
+  @media screen and (max-width: 800px) {
+    background-image: url('../src/image/background/mobile-grass@2x.jpg');
+  }
 }
