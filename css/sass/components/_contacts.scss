@@ -13,6 +13,12 @@
     height: 195px;
     bottom: 0;
     background-image: url(../src/image/table/table-icon.png);
+
+    @media screen and (max-width: 500px) {
+      position: fixed;
+      left: -3px;
+      top: 50vh;
+    }
   }
 
   &--pop {

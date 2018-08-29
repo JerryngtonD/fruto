@@ -117,6 +117,12 @@
   left: -110px;
   z-index: 10;
 
+  @media screen and (max-width: 800px) {
+    width: 175px;
+    height: 200px;
+    left: -20px;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -127,6 +133,13 @@
     background-image: url(../src/image/table/promo-table.png);
     background-size: cover;
     z-index: -12;
+
+    @media screen and (max-width: 800px) {
+      width: 175px;
+      top: 111px;
+      left: 0px;
+      height: 89px;
+    }
   }
 }
 
@@ -135,6 +148,10 @@
   width: 300px;
   left: 340px;
   opacity: 0;
+
+  @media screen and (max-width: 800px) {
+    font-size: 15px;
+  }
 }
 
 .bee__description {
@@ -150,6 +167,12 @@
   z-index: 2;
   opacity: 0;
   transition: opacity 0.3s cubic-bezier(0.19, 0.86, 0.41, 0.68);
+
+  @media screen and (max-width: 800px) {
+    top: -130px;
+    left: -250px;
+    width: 310px;
+  }
 
   &:after {
     position: absolute;

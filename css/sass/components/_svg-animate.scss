@@ -1,5 +1,10 @@
 .svg-path {
   position: absolute;
+
+  @media screen and (max-width: 800px) {
+    display: none;
+  }
+
   .path {
     animation: dash 4s linear reverse infinite;
     stroke-dasharray: 20;
