@@ -29,3 +29,9 @@
     }
   }
 }
+
+.main-nav__img {
+  @media screen and (max-width: 800px) {
+    width: 60px;
+  }
+}
