@@ -53,6 +53,10 @@
     background-size: contain;
 
     @media screen and (max-width: 800px) {
+      max-width: 160px;
+      max-height: 155px;
+      width: 100%;
+      height: 100%;
       margin-bottom: 10vw;
     }
 
@@ -249,7 +253,7 @@
   }
 
   &__item-6 {
-    background-image: url(../src/image/level-6.png);
+    //background-image: url(../src/image/level-6.png);
     background-repeat: no-repeat;
     width: 200px;
     height: 150px;

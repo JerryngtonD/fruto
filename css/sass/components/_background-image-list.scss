@@ -1,0 +1,80 @@
+.background-image-list {
+  display: none;
+
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
+	
+	&__item {
+    position: absolute;
+		width: 100px;
+		height: 100px;
+		background-color: #345;
+    background-position: center;
+    background: url("../src/image/background-element/tree-1.png");
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+
+    &--1 {
+      top: 60px;
+      left: 22vw;
+      background-image: url("../src/image/background-element/grass-1.png");
+    }
+
+    &--2 {
+      top: 90px;
+      left: 55vw;
+      background-image: url("../src/image/background-element/tree-1.png");
+    }
+
+    &--3 {
+      top: 350px;
+      left: 20vw;
+      background-image: url("../src/image/background-element/house-1.png");
+    }
+
+    &--4 {
+      top: 420px;
+      left: 55vw;
+      background-image: url("../src/image/background-element/grass-2.png");
+    }
+
+    &--5 {
+      top: 650px;
+      left: 20vw;
+      background-image: url("../src/image/background-element/tree-2.png");
+    }
+
+    &--6 {
+      top: 850px;
+      left: 50vw;
+      background-image: url("../src/image/background-element/tree-3.png");
+    }
+
+     &--7 {
+      top: 1170px;
+      left: 20vw;
+      background-imge: url("../src/image/background-element/tree-4.png");
+    }
+
+    &--8 {
+      top: 1250px;
+      left: 25vw;
+      background-imge: url("../src/image/background-element/tree-1.png");
+    }
+
+    &--9 {
+      top: 1250px;
+      left: 50vw;
+      background-imge: url("../src/image/background-element/tree-5.png");
+    }
+
+    &--10 {
+      top: 1600px;
+      left: 20vw;
+      background-imge: url("../src/image/background-element/house-1.png");
+    }
+	}
+}

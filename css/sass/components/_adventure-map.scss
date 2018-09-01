@@ -111,6 +111,12 @@
 
   &--content {
     width: 100%;
+    position: relative;
+    top: -165px;
+
+    @media screen and (max-width: 800px) {
+      top: 20px;
+    }
   }
 }
 
@@ -167,7 +173,7 @@
   }
 }
 
-.adventure-map__wrapper--content {
+/*.adventure-map__wrapper--content {
   position: relative;
   top: -165px;
-}
+}*/
