@@ -93,5 +93,5 @@ $(window).scroll(function() {
 
 
 $(document).ready(function(){
-    $('.move-wrapper').sticky({topSpacing: 200, zIndex: 10});
+    $('.move-wrapper').sticky({topSpacing: 550, zIndex: 10});
 });

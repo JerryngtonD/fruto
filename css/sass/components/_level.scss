@@ -53,6 +53,10 @@
     background-size: contain;
 
     @media screen and (max-width: 800px) {
+      max-width: 160px;
+      max-height: 155px;
+      width: 100%;
+      height: 100%;
       margin-bottom: 10vw;
     }
 

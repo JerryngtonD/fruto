@@ -5,12 +5,21 @@
   align-items: flex-start;
   padding-bottom: 4rem;
 
+  @media screen and (max-width: 800px) {
+    justify-content: space-between;
+  }
+
   &__text {
     max-width: 70%;
     text-align: left;
 
-    @media screen and (max-width: 550px) {
-      max-width: 100%;
+    @media screen and(max-width: 1200px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 800px) {
+      max-width: 50%;
     }
 
     .description {
@@ -60,6 +69,17 @@
     cursor: pointer;
     outline: none;
 
+    @media screen and (max-width: 800px) {
+      padding-left: 10px;
+      -webkit-background-size: contain;
+      background-size: contain;
+    }
+
+    /*#svg-btn {
+      width: 35px;
+      height: 20px;
+    }*/
+
     &::after {
       position: absolute;
       content: "";
@@ -69,6 +89,15 @@
       right: 30px;
       transform: translateY(-50%);
       background-image: url("../src/image/buttons/logo-button.png");
+      background-position: center;
+      -webkit-background-size: contain;
+      background-size: contain;
+
+      @media screen and (max-width: 800px) {
+        right: 10px;
+        width: 28px;
+        height: 27px;
+      }
     }
 
     &:hover {
@@ -121,9 +150,14 @@
   margin-left: 50px;
   width: 215px;
   height: 245px;
-  background-image: url(../src/image/bee/pop-up-bee.png);
+  -webkit-background-size: contain;
+  background-size: contain;
+  background-repeat: no-repeat;
 
-  &::before {
+  &--bottom {
+    background-image: url(../src/image/bee/pop-up-bee.png);
+
+    &::before {
     width: 200px;
     height: 700px;
     position: absolute;
@@ -133,7 +167,30 @@
     background-image: url(../src/image/bee/bee-path-popup.png);
     background-repeat: no-repeat;
 
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+
   }
+
+    @media screen and (max-width: 1000px) {
+      display: none;
+    }
+  }
+
+  &--top {
+    
+    @media screen and (max-width: 1000px) {
+      margin-left: 0;
+      background-image: url(../src/image/bee/pop-up-bee.png);
+    }
+
+    @media screen and (max-width: 800px) {
+      width: 102px;
+      height: 132px;
+    }
+  }
+
 
   &:hover &__description {
     opacity: 1;

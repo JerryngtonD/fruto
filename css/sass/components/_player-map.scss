@@ -44,5 +44,11 @@
     background-color: rgba(0, 0, 0, .3);
     background: url(../src/image/game-paper-top.png) center top no-repeat;
     background-size: contain;
+
+    @media screen and (max-width: 800px) {
+      top: -20px;
+      background: url(../src/image/pop-up-top.png) center top no-repeat;
+      background-size: contain;
+    }
   }
 }
