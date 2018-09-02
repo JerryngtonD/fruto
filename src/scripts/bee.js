@@ -93,6 +93,5 @@ $(window).scroll(function() {
 
 
 $(document).ready(function(){
-    //$('.move-wrapper').sticky({topSpacing: 550, zIndex: 10});
-    $('.move-wrapper').sticky({topSpacing: 350, zIndex: 10});
+    $('.move-wrapper').sticky({topSpacing: 300, zIndex: 13});
 });

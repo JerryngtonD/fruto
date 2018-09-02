@@ -14,10 +14,12 @@
     bottom: 0;
     background-image: url(../src/image/table/table-icon.png);
 
-    @media screen and (max-width: 500px) {
-      //position: fixed;
-      left: -3px;
-      //top: 50vh;
+    @media screen and (max-width: 800px) {
+      left: -25px;
+      width: 54px;
+      height: 140px;
+      justify-content: space-evenly;
+      border-radius: 0 20px 6px 0;
     }
   }
 
@@ -51,6 +53,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     transition: transform .3s ease;
+
+    @media screen and (max-width: 800px) {
+      width: 18px;
+      height: 18px;
+    }
 
     &:hover {
       transform: scale(1.1);
