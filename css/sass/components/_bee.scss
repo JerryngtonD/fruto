@@ -22,7 +22,8 @@
   /* max-height: 150px; */
   z-index: 3;
 
-  &:hover {
+  &:hover,
+  &:focus {
     .bee__description {
       opacity: 1;
     }

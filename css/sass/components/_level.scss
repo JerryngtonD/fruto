@@ -52,6 +52,7 @@
     background-position: center;
     -webkit-background-size: contain;
     background-size: contain;
+    z-index: 11;
 
     @media screen and (max-width: 800px) {
       max-width: 160px;
