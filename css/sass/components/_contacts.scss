@@ -3,8 +3,8 @@
   flex-direction: column;
   align-items: center;
   position: absolute;
-  
-  
+
+
   background-repeat: no-repeat;
 
   &--main {
@@ -15,9 +15,9 @@
     background-image: url(../src/image/table/table-icon.png);
 
     @media screen and (max-width: 500px) {
-      position: fixed;
+      //position: fixed;
       left: -3px;
-      top: 50vh;
+      //top: 50vh;
     }
   }
 

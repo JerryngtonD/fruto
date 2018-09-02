@@ -4,7 +4,7 @@
   background-color: #d7ba99;
   /*background: url(../src/image/wood-desk.png);*/
 
-  background: 
+  background:
               /*url(../src/image/game-paper-top.png) center top no-repeat,*/
               url(../src/image/game-paper.png) center bottom no-repeat,
               url(../src/image/game-paper-midle.jpg) 0 100% repeat;
@@ -15,7 +15,7 @@
   -webkit-background-size: contain;
   background-size: contain;
 
-  
+
   /*background: url(../src/image/game-paper-top.png) top left,
               url(../src/image/game-paper-midle.jpg) 10% left,
               url(../src/image/game-paper.png) bottom left;*/
@@ -46,7 +46,7 @@
     background-size: contain;
 
     @media screen and (max-width: 800px) {
-      top: -20px;
+      top: -10px;
       background: url(../src/image/pop-up-top.png) center top no-repeat;
       background-size: contain;
     }

@@ -16,6 +16,13 @@
     top: 700px;
     right: 120px;
     background-image: url("../src/image/left-fruit-1.png");
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      right: 98px;
+      top: 460px;
+      width: 150px;
+    }
   }
 
   &__left-2 {
@@ -39,6 +46,12 @@
     bottom: -800px;
     width: 115px;
     background-image: url("../src/image/left-fruit-4.png");
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      bottom: -1100px;
+      z-index: 1;
+    }
   }
 
   &__right-1 {
@@ -56,6 +69,13 @@
     width: 160px;
     height: 165px;
     background-image: url("../src/image/right-fruit-2.png");
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      width: 90px;
+      right: -50px;
+      top: 420px;
+    }
   }
 
   &__right-3 {
@@ -64,6 +84,14 @@
     width: 50px;
     height: 50px;
     background-image: url("../src/image/right-fruit-one-1-3.png");
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      top: 1000px;
+      width: 30px;
+      right: -10px;
+      z-index: 1;
+    }
   }
 
   &__right-4 {
@@ -72,6 +100,13 @@
     width: 50px;
     height: 50px;
     background-image: url("../src/image/right-fruit-one-2-4.png");
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      right: -20px;
+      width: 30px;
+      top: 970px;
+    }
   }
 
   &__right-5 {
@@ -80,6 +115,13 @@
     width: 180px;
     height: 120px;
     background-image: url("../src/image/right-fruit-group-6.png");
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      right: -30px;
+      width: 90px;
+      top: 970px;
+    }
   }
 
   &__right-6 {
@@ -88,6 +130,13 @@
     width: 135px;
     height: 205px;
     background-image: url("../src/image/right-fruit-7.png");
+
+    @media screen and (max-width: 800px) {
+      display: block;
+      z-index: 1;
+      top: 1030px;
+      width: 65px;
+    }
   }
 
   &__right-7 {
@@ -104,6 +153,12 @@
     width: 230px;
     height: 290px;
     background-image: url("../src/image/right-fruit-9.png");
+
+    @media screen and (max-width: 800px) {
+      width: 130px;
+      display: block;
+      top: 1550px;
+    }
   }
 
   &__right-9 {
