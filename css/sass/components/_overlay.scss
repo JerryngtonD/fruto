@@ -11,4 +11,8 @@
   background-repeat: no-repeat;
   display: none;
   z-index: 12;
+
+  &--winners {
+    display: block;
+  }
 }
