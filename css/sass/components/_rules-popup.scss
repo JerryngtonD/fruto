@@ -1,0 +1,59 @@
+.rules-popup {
+  z-index: 15;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: radial-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),
+                    url(../src/image/pop-up-blur.jpg);
+  background-size: cover, cover, cover;
+  background-position: center;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.rules {
+  max-width: 1065px;
+  height: 100%;
+  padding: 20px;
+  position: relative;
+  background: url(../src/image/pop-up-top.png) center top no-repeat, url(../src/image/pop-up-bottom.png) 0 bottom no-repeat, url(../src/image/pop-up-middle.jpg) center 0 repeat-y;
+  background-size: 100%;
+  margin: 7vh auto;
+  padding-top: 127px;
+  border-radius: 10px;
+}
+
+.rules__logo {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 30px;
+  left: 50px;
+
+  .main-nav__img {
+    width: 130px;
+  }
+}
+
+.rules-subtittle {
+  font-size: 22px;
+  line-height: normal;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+.rules-list {
+  counter-reset: heading;
+  list-style-type: none;
+
+
+  li::before {
+    counter-increment: heading;
+    content: counters(heading,".") " ";
+  }
+}
+
+
