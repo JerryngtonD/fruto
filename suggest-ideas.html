@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+    <meta http-equiv="msthemecompatible" content="no" />
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Предлагай идею</title>
+</head>
+<body>
+<section class="message-popup">
+    <div class="send-message">
+        <a class="send-message__logo" href="index.html">
+            <img class="main-nav__img" src="./src/image/fruto-logo.png" alt="Фруто-няня логотип">
+        </a>
+        <button class="send-message__close">
+            <a href="map-adventures.html"></a>
+        </button>
+        <h1 class="send-message__title">Спасибо!</h1>
+        <p class="send-message__body">
+            Мы получили ваше сообщение. Если ваша идея войдет в топ, мы обязательно свяжемся с вами.
+        </p>
+    </div>
+</section>
+
+<script>
+    var btnClose = document.querySelector('.send-message__close');
+    var sendMessage = document.querySelector('.send-message');
+    btnClose.addEventListener('click', function (clickEvt) {
+        sendMessage.style.display = 'none';
+    });
+</script>
+</body>
+</html>

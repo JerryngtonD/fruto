@@ -13,8 +13,8 @@
   /*background-image: url("../src/image/game-bg.png");*/
 
 
-  
-  background: 
+
+  background:
               url(../src/image/pop-up-top.png) center top no-repeat,
               url(../src/image/pop-up-bottom.png) 0 bottom no-repeat,
               url(../src/image/pop-up-middle.jpg) center 0 repeat-y;
@@ -48,6 +48,12 @@
   &--winners {
     display: block;
     margin-bottom: 90px;
+  }
+
+  &--ideas {
+    display: block;
+    margin-bottom: 90px;
+    background-size: 100%;
   }
 
   .btn-close {

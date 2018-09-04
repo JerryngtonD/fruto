@@ -1,0 +1,103 @@
+.send-message {
+  max-width: 770px;
+  height: 400px;
+  padding: 20px;
+  position: relative;
+
+  background: url(../src/image/pop-up-top.png) center top no-repeat,
+  url(../src/image/pop-up-bottom.png) 0 bottom no-repeat,
+  url(../src/image/pop-up-middle.jpg) center 0 repeat-y;
+  background-size: 100%;
+  margin: 7vh auto;
+  padding-top: 127px;
+  border-radius: 10px;
+
+  &__logo {
+    position: absolute;
+    top: -30px;
+    left: -220px;
+
+    @media screen and (max-width: 1280px) {
+      top: 25px;
+      left: 30px;
+    }
+
+    .main-nav__img {
+      @media screen and (max-width: 1280px) {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+
+  &__close {
+    background-image: url("../src/image/game-close.png");
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-size: contain;
+    border-style: none;
+    cursor: pointer;
+    outline: none;
+    position: absolute;
+    width: 85px;
+    height: 77px;
+    top: 40px;
+    right: 40px;
+
+    @media screen and (max-width: 500px) {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    object-fit: contain;
+    font-family: KiddyKitty, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 620px) {
+      font-size: 30px;
+    }
+  }
+
+  &__body {
+    max-width: 625px;
+    margin: 0 auto;
+    font-size: 26px;
+    text-align: center;
+    line-height: normal;
+    color: #000000;
+
+    @media screen and (max-width: 620px) {
+      font-size: 16px;
+      max-width: 308px;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    width: 90vw;
+  }
+}
+
+.message-popup {
+  z-index: 15;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../src/image/background/bg-send-message.png), radial-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../src/image/pop-up-blur.jpg);
+  background-size: cover, cover, cover;
+  background-position: center;
+  width: 100vw;
+  min-height: 100vh;
+
+  @media screen and (max-width: 620px) {
+    background-size: 130%, cover, cover;
+
+  }
+}
+
+
+
