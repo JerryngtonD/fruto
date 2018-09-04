@@ -55,6 +55,12 @@
     padding-top: 13px;
   }
 
+  @media screen and (max-width: 360px) {
+    height: 35px;
+    padding: 8px 20px;
+    line-height: 20px;  
+  }
+
   &:hover, &:focus {
     background-image: url('../src/image/button.png');
   }

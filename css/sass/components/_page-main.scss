@@ -66,6 +66,10 @@
     min-height: 660px;
   }
 
+  @media screen and (max-width: 360px) {
+    min-height: 560px;
+  }
+
 
  /* padding-top: 200px;
   object-fit: contain;
@@ -99,5 +103,9 @@
 
   @media screen and (max-width: 800px) {
     padding-top: 60px;
+  }
+
+  @media screen and (max-width: 400px) {
+    padding-top: 30px; 
   }
 }
