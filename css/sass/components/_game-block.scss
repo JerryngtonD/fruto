@@ -45,10 +45,6 @@
     width: 92vw;
   }*/
 
-  &--winners {
-    display: block;
-    margin-bottom: 90px;
-  }
 
   .btn-close {
     position: absolute;
@@ -93,6 +89,31 @@
 
     img {
       width: 100%;
+    }
+  }
+
+  &--winners {
+    display: block;
+    margin-bottom: 90px;
+
+    .logo {
+      @media screen and (max-width: 900px) {
+        width: 91px;
+      }
+    }
+
+    .btn-close {
+      
+      @media screen and (max-width: 700px) {
+        width: 56px;
+        height: 51px;
+      }
+
+    }
+
+    @media screen and (max-width: 1300px) {
+      width: 92vw;
+      left: 50vw;
     }
   }
 
