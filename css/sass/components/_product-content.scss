@@ -81,4 +81,11 @@
     left: -5px;
     bottom: 100px;
   }
+
+  @media screen and (max-width: 350px) {
+    max-width: 110px;
+    max-height: 180px;
+    left: 0;
+    bottom: 105px; 
+  }
 }

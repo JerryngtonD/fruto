@@ -53,6 +53,10 @@
     margin-bottom: 76%;
   }
 
+  @media screen and (max-width: 350px) {
+    margin-bottom: 70%; 
+  }
+
   &__button {
     font-size: 20px;
     font-weight: 100;
@@ -171,6 +175,11 @@
     max-width: 375px;
     margin-top: 20px;
     margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 350px) {
+    margin-top: 5px;
+    margin-bottom: 15px; 
   }
 }
 

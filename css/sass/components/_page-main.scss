@@ -66,6 +66,10 @@
     min-height: 660px;
   }
 
+  @media screen and (max-width: 350px) {
+    min-height: 560px;
+  }
+
 
  /* padding-top: 200px;
   object-fit: contain;
