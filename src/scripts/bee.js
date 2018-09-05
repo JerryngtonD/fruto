@@ -96,17 +96,26 @@ var topField = 255;
 $(document).ready(function(){
     if ($( window ).width() < 400) {
         topField = 195;
+        $('.move-wrapper').unstick();
         $('.move-wrapper').css({'top': topField});
+        $('.move-wrapper').sticky({topSpacing: topField, zIndex: 13});
+
     }
 
     else if ($( window ).width() >= 400 && $( window ).width() < 801)  {
         topField = 280;
+        $('.move-wrapper').unstick();
         $('.move-wrapper').css({'top': topField});
+        $('.move-wrapper').sticky({topSpacing: topField, zIndex: 13});
+
     }
 
     else if ($( window ).width() >= 801) {
         topField = 170;
+        $('.move-wrapper').unstick();
         $('.move-wrapper').css({'top': topField});
+        $('.move-wrapper').sticky({topSpacing: topField, zIndex: 13});
+
 
     }
 });
@@ -119,17 +128,27 @@ $('.move-wrapper').css({'top': topField});
 $( window ).resize(function() {
     if ($( window ).width() < 400) {
         topField = 195;
+        $('.move-wrapper').unstick();
         $('.move-wrapper').css({'top': topField});
+        $('.move-wrapper').sticky({topSpacing: topField, zIndex: 13});
+
+
+
     }
 
     else if ($( window ).width() >= 400 && $( window ).width() < 801)  {
         topField = 280;
+        $('.move-wrapper').unstick();
         $('.move-wrapper').css({'top': topField});
+        $('.move-wrapper').sticky({topSpacing: topField, zIndex: 13});
+
     }
 
     else if ($( window ).width() >= 801 ) {
         topField = 170;
+        $('.move-wrapper').unstick();
         $('.move-wrapper').css({'top': topField});
+        $('.move-wrapper').sticky({topSpacing: topField, zIndex: 13});
 
     }
 });
