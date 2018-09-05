@@ -105,10 +105,11 @@
 
 
   &__item-1 {
-    background-image: url(../src/image/level-1.png);
+    //background-image: url(../src/image/level-1.png);
     background-repeat: no-repeat;
-    width: 100px;
-    height: 120px;
+    width: 160px;
+    height: 170px;
+    top: -30px;
     position: relative;
     margin-right: 220px;
     /*right: -240px;
@@ -328,7 +329,7 @@
 
   &__item-1 {
     @media screen and (max-width: 800px) {
-      width: 25%;
+      width: 35%;
       height: 280px;
       text-align: center;
     }
