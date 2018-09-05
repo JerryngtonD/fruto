@@ -91,11 +91,11 @@ $(window).scroll(function() {
 });
 */
 
-var topField = 255;
+var topField;
 
 $(document).ready(function(){
     if ($( window ).width() < 400) {
-        topField = 195;
+        topField = 220;
         $('.move-wrapper').unstick();
         $('.move-wrapper').css({'top': topField});
         $('.move-wrapper').sticky({topSpacing: topField, zIndex: 13});
@@ -127,7 +127,7 @@ $('.move-wrapper').css({'top': topField});
 
 $( window ).resize(function() {
     if ($( window ).width() < 400) {
-        topField = 195;
+        topField = 220;
         $('.move-wrapper').unstick();
         $('.move-wrapper').css({'top': topField});
         $('.move-wrapper').sticky({topSpacing: topField, zIndex: 13});
