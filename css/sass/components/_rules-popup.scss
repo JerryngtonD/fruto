@@ -14,13 +14,26 @@
 .rules {
   max-width: 1065px;
   height: 100%;
-  padding: 20px;
+  padding: 47px 57px;
   position: relative;
   background: url(../src/image/pop-up-top.png) center top no-repeat, url(../src/image/pop-up-bottom.png) 0 bottom no-repeat, url(../src/image/pop-up-middle.jpg) center 0 repeat-y;
   background-size: 100%;
   margin: 7vh auto;
   padding-top: 127px;
   border-radius: 10px;
+
+  @media screen and (max-width: 1100px) {
+    max-width: 700px;
+  }
+
+  @media screen and (max-width: 750px) {
+    max-width: 400px;
+    padding: 47px 32px;
+  }
+
+  @media screen and (max-width: 400px) {
+    max-width: 300px;
+  }
 }
 
 .rules__logo {
@@ -30,8 +43,50 @@
   top: 30px;
   left: 50px;
 
+  @media screen and (max-width: 750px) {
+    left: 30px;
+  }
+
+  @media screen and (max-width: 400px) {
+    left: 20px;
+    top: 20px;
+  }
+
   .main-nav__img {
     width: 130px;
+
+    @media screen and (max-width: 1100px) {
+      width: 100px;
+    }
+
+    @media screen and (max-width: 750px) {
+      width: 70px;
+    }
+
+    @media screen and (max-width: 400px) {
+      width: 50px;
+    }
+
+  }
+}
+
+.rules__close {
+  @media screen and (max-width: 1100px) {
+    width: 60px;
+    top: 50px;
+    right: 40px;
+  }
+
+  @media screen and (max-width: 750px) {
+    width: 50px;
+    top: 45px;
+    right: 40px;
+  }
+
+  @media screen and (max-width: 400px) {
+    width: 40px;
+    top: 25px;
+    right: 20px;
   }
 }
 
@@ -40,9 +95,19 @@
   line-height: normal;
   margin: 0 auto;
   margin-bottom: 10px;
+  font-style: normal;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+  margin-bottom: 10px;
+
+  @media screen and (max-width: 750px) {
+    font-size: 19px;
+  }
+
+  @media screen and (max-width: 400px) {
+    font-size: 18px;
+  }
 }
 
 .rules-list {
@@ -50,9 +115,39 @@
   list-style-type: none;
 
 
-  li::before {
+  > li::before {
     counter-increment: heading;
     content: counters(heading,".") " ";
+  }
+
+  &__header {
+    display: inline-block;
+    padding-top: 25px;
+    padding-bottom: 10px;
+  }
+}
+
+.with-hypen {
+
+  &::before {
+    content: "—";
+    text-indent: -5px;
+  }
+}
+
+.rules-list--title {
+  font-size: 80px;
+  max-width: 675px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1100px) {
+    max-width: 350px;
+    font-size: 50px;
+  }
+
+  @media screen and (max-width: 750px) {
+    max-width: 200px;
+    font-size: 30px;
   }
 }
 
