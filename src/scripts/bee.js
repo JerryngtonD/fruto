@@ -92,7 +92,9 @@ $(window).scroll(function() {
 */
 
 var topField;
-$('.move-wrapper').sticky({zIndex: 13});
+$('.move-wrapper').hover(function() {
+    $( this ).css({zIndex: 13});
+});
 
 $(document).ready(function(){
     if ($( window ).width() < 400) {
@@ -153,4 +155,7 @@ $( window ).resize(function() {
 
     }
 });
+
+
+
 
