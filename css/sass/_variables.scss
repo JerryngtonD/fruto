@@ -3,3 +3,36 @@ $secondary-color: #383838;
 
 $main-bg-color: #ffffff;
 
+
+/* Breakpoints
+----------------------------------------- */
+$bmobile: 800px;
+$bdesktop: 1280px;
+
+/* Colors
+----------------------------------------- */
+$black: 		#000000;
+$white: 		#ffffff;
+
+/* Fonts
+----------------------------------------- */
+$freg: 		400;
+$fmed: 		500;
+$fbold: 	700;
+
+$font-family: 'Myriad Pro', sans-serif;
+$font-path: '../fonts/';
+$fonts: (
+        reg: 	KiddyKitty,
+        bold: 	KiddyKitty-Bold
+);
+
+@each $font, $name in $fonts {
+  @font-face {
+    font-family: '' + $name + '';
+    src: url($font-path + $name + '.woff2') format('woff2'),
+    url($font-path + $name + '.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+}

@@ -1,0 +1,14 @@
+.relative {
+	position: relative !important;
+}
+.hidden {
+	visibility: hidden !important;
+	position: absolute !important;
+	z-index: -1 !important;
+}
+.pseudo {
+	cursor: pointer;
+	outline:none;
+	text-decoration:none;
+	@include transition("border, background-color, color, opacity", .3s, "ease");
+}

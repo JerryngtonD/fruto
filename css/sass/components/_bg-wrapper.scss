@@ -49,11 +49,12 @@
   background-position: center;
   background-repeat: repeat;
   background-size: contain;
-  min-height: 100vh;
+ /* min-height: 100vh;
   height: 100%;
-  overflow: hidden;
+  overflow: hidden;*/
 
-  @media screen and (max-width: 800px) {
+
+@media screen and (max-width: 800px) {
     background-image: url('../src/image/background/mobile-grass@2x.jpg');
   }
 }

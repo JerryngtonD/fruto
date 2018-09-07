@@ -40,6 +40,14 @@
 @import 'components/send-message';
 @import 'components/rules-popup.scss';
 
+@import "mixins";
+//@import "reset";
+@import "transition";
+@import "main";
+@import "utils";
+
+@import "components/popup";
+
 *,
 *::before,
 *::after {
