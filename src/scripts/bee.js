@@ -5,7 +5,7 @@ $('.move-wrapper').hover(function() {
 
 $(document).ready(function(){
     if ($( window ).width() < 400) {
-        topField = 220;
+        topField = 210;
         $('.move-wrapper').unstick();
         $('.move-wrapper').css({'top': topField});
         $('.move-wrapper').sticky({topSpacing: topField, zIndex: 13});
@@ -13,7 +13,7 @@ $(document).ready(function(){
     }
 
     else if ($( window ).width() >= 400 && $( window ).width() < 801)  {
-        topField = 340;
+        topField = 320;
         $('.move-wrapper').unstick();
         $('.move-wrapper').css({'top': topField});
         $('.move-wrapper').sticky({topSpacing: topField, zIndex: 13});
@@ -35,7 +35,7 @@ $('.move-wrapper').sticky({zIndex: 13});
 
 $( window ).resize(function() {
     if ($( window ).width() < 400) {
-        topField = 220;
+        topField = 180;
         $('.move-wrapper').unstick();
         $('.move-wrapper').css({'top': topField});
         $('.move-wrapper').sticky({topSpacing: topField, zIndex: 13});
