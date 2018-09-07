@@ -62,6 +62,7 @@
   }
 
   &--right-1 {
+    z-index: 1;
     top: 300px;
     transform: rotate(7deg) translateX(70%);
     background-image: url(../src/image/right-product-1.png);

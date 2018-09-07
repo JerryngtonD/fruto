@@ -47,12 +47,11 @@
   }
 
   &__item {
-    z-index: 2;
     position: relative;
     background-position: center;
     -webkit-background-size: contain;
     background-size: contain;
-    z-index: 11;
+    z-index: 1;
 
     @media screen and (max-width: 800px) {
       max-width: 160px;
@@ -65,9 +64,15 @@
     img {
       position: relative;
       z-index: 10;
-      max-width: 100%;
-      height: 100%;
       object-fit: contain;
+      width: 250px;
+      height: 280px;
+      max-width: 120%;
+
+      @media screen and (max-width: 800px) {
+        width: 150px;
+        height: 170px;
+      }
     }
 
   /*  span {
@@ -107,27 +112,39 @@
   &__item-1 {
     //background-image: url(../src/image/level-1.png);
     background-repeat: no-repeat;
-    width: 160px;
+    width: 180px;
     height: 170px;
     top: -30px;
     position: relative;
     margin-right: 220px;
-    /*right: -240px;
-    top: 160px;*/
+
+    img {
+      @media screen and (max-width: 800px) {
+        width: 190px;
+        height: 140px;
+      }
+    }
 
     @media screen and (max-width: 800px) {
       margin-right: 0;
     }
 
- /*   &:before {
+    &:before {
       content: "";
       position: absolute;
       background-image: url(../src/image/path-1.png);
       background-repeat: no-repeat;
-      width: 100px;
+      width: 120px;
       height: 120px;
-      top: -40px;
-      left: -110px;
+      top: 30px;
+      left: -80px;
+
+
+      @media screen and (max-width: 800px) {
+        background-image: url(../src/image/path-mobile-1.png);
+        top: -80px;
+        left: 80px;
+      }
     }
 
     &:after {
@@ -137,9 +154,15 @@
       background-repeat: no-repeat;
       width: 220px;
       height: 100px;
-      top: 40px;
-      left: 110px;
-    }*/
+      top: 130px;
+      left: 190px;
+
+      @media screen and (max-width: 800px) {
+        background-image: url(../src/image/path-mobile-2.png);
+        top: 140px;
+        left: 100px;
+      }
+    }
   }
 
   &__item-2 {
@@ -148,44 +171,64 @@
     width: 150px;
     height: 120px;
     position: relative;
-   /* position: relative;*/
-    /*right: -570px;
-    top: 10px;*/
+    right: 0px;
+    top: -20px;
 
-/*    &::after {
+    @media screen and (max-width: 800px) {
+      margin-bottom: 160px;
+      width: 100px;
+    }
+
+    &::after {
       content: "";
       position: absolute;
       background-image: url(../src/image/path-3.png);
       background-repeat: no-repeat;
       width: 250px;
       height: 240px;
-      top: 90px;
-      left: -30px;
-    }*/
+      top: 190px;
+      left: -10px;
+
+      @media screen and (max-width: 800px) {
+        background-image: url(../src/image/path-mobile-3.png);
+        top: 150px;
+        left: 50px;
+      }
+    }
   }
 
   &__item-3 {
     //background-image: url(../src/image/level-3.png);
     background-repeat: no-repeat;
-    width: 150px;
+    width: 170px;
     height: 120px;
     position: relative;
-    /*position: relative;
     right: -380px;
-    top: 120px;*/
+    top: -70px;
+    left: 10px;
     z-index: 2;
-    left: -30px;
 
-/*    &:after {
+    @media screen and (max-width: 800px) {
+      width: 110px;
+      margin-bottom: 70px;
+    }
+
+    &:after {
       content: "";
       position: absolute;
       background-image: url(../src/image/path-4.png);
       background-repeat: no-repeat;
       width: 250px;
       height: 230px;
-      top: 30px;
+      top: 120px;
       left: -260px;
-    }*/
+
+      @media screen and (max-width: 800px) {
+        background-image: url(../src/image/path-mobile-4.png);
+        top: 160px;
+        left: 60px;
+      }
+    }
 
     @media screen and (max-width: 800px) {
       left: 0;
@@ -198,27 +241,36 @@
     width: 170px;
     height: 210px;
     margin-right: 35%;
-    position: relative;
     margin-top: -75px;
-  /*  position: relative;
-    right: -110px;
-    top: 190px;*/
+    position: relative;
+    right: -10px;
+    top: -20px;
 
-/*    &:after {
+    img {
+      @media screen and (max-width: 800px) {
+        width: 140px;
+      }
+    }
+
+    &:after {
       content: "";
       position: absolute;
       background-image: url(../src/image/path-5.png);
       background-repeat: no-repeat;
       width: 300px;
       height: 230px;
-      top: 125px;
-      left: 160px;
-    }*/
+      top: 180px;
+      left: 150px;
+
+      @media screen and (max-width: 800px) {
+        background-image: url(../src/image/path-mobile-5.png);
+        top: 160px;
+        left: 60px;
+      }
+    }
 
     @media screen and (max-width: 800px) {
       text-align: center;
-      width: 150px;
-      height: 200px;
       max-height: 200px;
       margin-top: -30px;
       margin-right: 0;
@@ -232,23 +284,39 @@
     background-repeat: no-repeat;
     width: 200px;
     height: 150px;
-    *position: relative;
-    margin-top: -20px;
     position: relative;
-    /*position: relative;
-    right: -560px;
-    top: 20px;*/
+    margin-top: -20px;
+    right: 30px;
+    top: -110px;
 
-/*    &:after {
+    @media screen and (max-width: 800px) {
+      right: 0px;
+      margin-bottom: 130px;
+    }
+
+    img {
+      @media screen and (max-width: 800px) {
+        width: 180px;
+        height: 260px;
+      }
+    }
+
+    &:after {
       content: "";
       position: absolute;
       background-image: url(../src/image/path-6.png);
       background-repeat: no-repeat;
       width: 300px;
       height: 230px;
-      top: 80px;
-      left: -10px;
-    }*/
+      top: 220px;
+      left: 15px;
+
+      @media screen and (max-width: 800px) {
+        background-image: url(../src/image/path-mobile-6.png);
+        top: 242px;
+        left: 85px;
+      }
+    }
 
     @media screen and (max-width: 800px) {
       width: 90%;
@@ -261,24 +329,42 @@
   &__item-6 {
     //background-image: url(../src/image/level-6.png);
     background-repeat: no-repeat;
-    width: 200px;
+    width: 210px;
     height: 150px;
     position: relative;
-    margin-left: 7%;
-    /*position: relative;
-    right: -420px;
-    top: 70px;*/
+    right: 60px;
+    top: -60px;
 
-/*    &::after {
+    @media screen and (max-width: 800px) {
+      width: 140px;
+      height: 200px;
+      margin-bottom: 100px;
+    }
+
+    img {
+      @media screen and (max-width: 800px) {
+        width: 280px;
+        height: 180px;
+        left: 50px;
+      }
+    }
+
+    &::after {
       position: absolute;
       content: "";
       background-image: url(../src/image/path-7.png);
       background-repeat: no-repeat;
       width: 300px;
       height: 260px;
-      top: 50px;
-      left: -200px;
-    }*/
+      top: 90px;
+      left: -160px;
+
+      @media screen and (max-width: 800px) {
+        background-image: url(../src/image/path-mobile-3.png);
+        top: 130px;
+        left: 125px;
+      }
+    }
 
     @media screen and (max-width: 800px) {
       margin-left: 0;
@@ -288,50 +374,37 @@
   &__item-7 {
     //background-image: url(../src/image/level-7.png);
     background-repeat: no-repeat;
-    width: 100px;
+    width: 140px;
     height: 150px;
     margin-top: 75px;
-    margin-left: 205px;
     position: relative;
-    /*position: relative;
-    right: -250px;
-    top: 230px;*/
+    right: -140px;
+    top: -70px;
 
     @media screen and (max-width: 800px) {
+      height: 150px;
+      width: 100px;
       margin-left: 0;
       margin-top: 0;
+      right: 0px;
+      top: -90px;
     }
 
-/*    &:after {
+    &:after {
       content: "";
       position: absolute;
       background-image: url(../src/image/path-8.png);
       background-repeat: no-repeat;
       width: 300px;
       height: 260px;
-      top: 120px;
-      left: 100px;
-    }*/
-  }
+      top: 230px;
+      left: 150px;
 
-
-  &__item-2,
-  &__item-3,
-  &__item-6,
-  &__item-7 {
-
-    @media screen and (max-width: 800px) {
-      width: 33%;
-      height: 280px;
-      text-align: center;
-    }
-  }
-
-  &__item-1 {
-    @media screen and (max-width: 800px) {
-      width: 35%;
-      height: 280px;
-      text-align: center;
+      @media screen and (max-width: 800px) {
+        background-image: url(../src/image/path-mobile-4.png);
+        top: 160px;
+        left: 45px;
+      }
     }
   }
 }
