@@ -2,5 +2,11 @@
   display: flex;
   right: 65px;
   position: absolute;
+  top: -250px;
+
+  @media screen and (min-width: 801px) {
+    right: 130px;
+    top: -40px;
+  }
 
 }
