@@ -1,11 +1,9 @@
 .background-image-list {
-  display: none;
-
-  @media screen and (max-width: 800px) {
-    display: block;
-  }
+  position: absolute;
+  min-width: 870px;
 
 	&__item {
+    display: none;
     position: absolute;
 		width: 100px;
 		height: 100px;
@@ -15,6 +13,10 @@
     -webkit-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
+
+      @media screen and (max-width: 800px) {
+        display: block;
+      }
 
 
     &--1 {
@@ -28,49 +30,54 @@
     &--2 {
       top: 90px;
       left: 59vw;
-      height: 100px;
+      height: 70px;
       background-image: url("../src/image/background-element/tree-1.png");
     }
 
     &--3 {
       width: 100px;
-      top: 420px;
-      left: 10vw;
+      height: 30px;
+      top: 310px;
+      left: 5vw;
       background-image: url("../src/image/background-element/house-1.png");
+
+      @media screen and (min-width: 395px) {
+        left: 20vw;
+      }
     }
 
     &--4 {
-      top: 430px;
+      top: 320px;
       width: 18px;
-      left: 65vw;
+      left: 60vw;
       background-image: url("../src/image/background-element/grass-2.png");
     }
 
     &--5 {
       width: 28px;
-      top: 585px;
-      left: 30vw;
+      top: 465px;
+      left: 21vw;
       background-image: url("../src/image/background-element/tree-2.png");
     }
 
     &--6 {
       width: 18px;
-      top: 800px;
-      left: 65vw;
+      top: 730px;
+      left: 70vw;
       background-image: url("../src/image/background-element/tree-3.png");
     }
 
      &--7 {
        width: 23px;
-       top: 940px;
+       top: 880px;
        left: 18vw;
        background-image: url("../src/image/background-element/tree-3.png");
     }
 
     &--8 {
       width: 18px;
-      top: 1040px;
-      left: 23vw;
+      top: 1120px;
+      left: 33vw;
       background-image: url("../src/image/background-element/tree-5.png");
     }
 
@@ -87,5 +94,97 @@
       left: 20vw;
       background-image: url("../src/image/background-element/grass-2.png");
     }
-	}
+  }
+}
+
+.background-desktop-list {
+
+  &__item {
+    display: none;
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #345;
+    background-position: center;
+    background: url("../src/image/background-element/tree-1.png");
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media screen and (min-width: 801px) {
+      display: block;
+    }
+
+    &--1 {
+      width: 30px;
+      height: 100px;
+      left: 340px;
+      top: 30px;
+      background-image: url("../src/image/bg-elems-desktop/tree-desktop-1.png");
+    }
+
+    &--2 {
+      width: 50px;
+      height: 100px;
+      left: 380px;
+      top: 100px;
+      background-image: url("../src/image/bg-elems-desktop/cloud-desktop-1.png");
+    }
+
+    &--3 {
+      width: 30px;
+      height: 80px;
+      left: 440px;
+      top: 10px;
+      background-image: url("../src/image/bg-elems-desktop/tree-desktop-2.png");
+    }
+
+    &--4 {
+      width: 30px;
+      height: 80px;
+      left: 640px;
+      top: 80px;
+      background-image: url("../src/image/bg-elems-desktop/grass-desktop-2.png");
+
+      @media screen and (min-width: 900px) {
+        left: 720px;
+      }
+    }
+
+    &--5 {
+      width: 30px;
+      height: 80px;
+      left: 260px;
+      top: 440px;
+      background-image: url("../src/image/bg-elems-desktop/tree-desktop-1.png");
+    }
+
+    &--6 {
+      width: 50px;
+      height: 80px;
+      left: 150px;
+      top: 760px;
+      background-image: url("../src/image/bg-elems-desktop/cloud-desktop-1.png");
+    }
+
+    &--7 {
+      width: 30px;
+      height: 80px;
+      left: 600px;
+      top: 750px;
+      background-image: url("../src/image/bg-elems-desktop/tree-desktop-2.png");
+    }
+
+    &--8 {
+      width: 50px;
+      height: 80px;
+      left: 70px;
+      top: 1090px;
+      background-image: url("../src/image/bg-elems-desktop/tree-desktop-3.png");
+
+      @media screen and (min-width: 1030px) {
+        left: 120px;
+      }
+    }
+  }
 }

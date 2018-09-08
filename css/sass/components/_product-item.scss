@@ -10,7 +10,7 @@
 
   @media screen and (max-width: 800px) {
     width: 250px;
-    height: 45vw;
+    height: 40vw;
     -webkit-background-size: contain;
     background-size: contain;
   }
@@ -53,15 +53,11 @@
     background-image: url(../src/image/left-product-3.png);
 
     @media screen and (max-width: 800px) {
-      top: 2120px;
       width: 280px;
       transform: rotate(7deg) translateX(91px);
-    }
-
-    @media screen and (max-width: 800px) {
-      top: 1120px;
+      top: 1130px;
       transform: rotate(7deg);
-      left: -200px;
+      left: -260px;
     }
   }
 
@@ -94,7 +90,12 @@
     transform: rotate(3deg) translateX(40%);
     background-image: url(../src/image/right-product-3.png);
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 400px) {
+      top: 1260px;
+      left: 90px;
+    }
+
+    @media screen and (min-width: 401px) and (max-width: 800px) {
       transform: rotate(10deg) translateX(45%);
       top: 1180px;
     }

@@ -25,8 +25,6 @@ $(document).ready(function(){
         $('.move-wrapper').unstick();
         $('.move-wrapper').css({'top': topField});
         $('.move-wrapper').sticky({topSpacing: topField, zIndex: 13});
-
-
     }
 });
 
