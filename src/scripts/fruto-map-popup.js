@@ -6,6 +6,7 @@ var pageHeaderToggle = document.querySelector('.page-header__toggle');
 var mainNav = document.querySelector('.main-nav');
 var moveBlock = document.querySelector('.move-wrapper');
 var contentHeight = document.querySelector('.bg-wrapper--map')
+var fruitItem = document.querySelector('.fruit-item__left-4')
 
 const currentLevelIdx = 1;
 function openLevelPopup(level) {
@@ -42,7 +43,8 @@ function openLevelPopup(level) {
             moveBlock.style.display = 'none';
             overlay.style.display = 'block';
             gameBlock.style.display = "block";
-            contentHeight.style.overflow = 'hidden';
+            contentHeight.style.overflow = "hidden";
+            fruitItem.style.display = "none";
         }
     })
 }
