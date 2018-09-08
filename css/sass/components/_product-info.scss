@@ -205,14 +205,22 @@
     background-image: url(../src/image/bee/pop-up-bee.png);
 
     &::before {
-    width: 200px;
+    width: 70px;
     height: 700px;
     position: absolute;
     content: "";
-    left: 191px;
+    left: 244px;
     top: -610px;
     background-image: url(../src/image/bee/bee-path-popup.png);
     background-repeat: no-repeat;
+
+    @media screen and (max-width: 1300px) {
+      left: 17vw;
+    }
+
+    @media screen and (max-width: 1150px) {
+      left: 18vw;
+    }
 
     @media screen and (max-width: 1000px) {
       display: none;
@@ -226,6 +234,12 @@
   }
 
   &--top {
+
+    > a {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
     
     @media screen and (max-width: 1000px) {
       display: block;
