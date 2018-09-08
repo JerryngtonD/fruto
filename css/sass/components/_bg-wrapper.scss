@@ -4,11 +4,12 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
- /* min-height: 980px;*/
-  min-height: 100vh;
+  /*min-height: 980px;*/
+  min-height: 980px;
+  height: 100vh;
   display: flex;
   align-items: flex-start;
-  overflow: hidden;
+  overflow-x: hidden;
 
   @media screen and (min-width: 1281px) {
     padding-top: 180px;
@@ -24,6 +25,7 @@
 
   @media screen and (max-width: 450px) {
     padding-top: 0;
+    min-height: 550px;
   }
 }
 

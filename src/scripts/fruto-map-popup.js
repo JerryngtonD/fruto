@@ -5,6 +5,7 @@ var overlay = document.querySelector('.overlay');
 var pageHeaderToggle = document.querySelector('.page-header__toggle');
 var mainNav = document.querySelector('.main-nav');
 var moveBlock = document.querySelector('.move-wrapper');
+var contentHeight = document.querySelector('.bg-wrapper--map')
 
 const currentLevelIdx = 1;
 function openLevelPopup(level) {
@@ -41,6 +42,7 @@ function openLevelPopup(level) {
             moveBlock.style.display = 'none';
             overlay.style.display = 'block';
             gameBlock.style.display = "block";
+            contentHeight.style.overflow = 'hidden';
         }
     })
 }
@@ -57,6 +59,7 @@ function closeAndClearPopup() {
     var ingredients = gameBlock.querySelector('.list-items');
     ingredients.innerHTML = '';
     gameBlock.style.display = "none";
+    contentHeight.style.overflow = 'visible';
 }
 
 levelItems.forEach(function (levelItem) {
