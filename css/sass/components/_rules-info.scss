@@ -2,4 +2,11 @@
   /*margin-bottom: 3rem;*/
 	padding-bottom: 3rem;
  /* border-bottom: 1px solid #383838;*/
+
+ .description {
+
+ 	@media screen and (max-width: 450px) {
+ 		font-weight: bold;
+ 	}
+ }
 }
