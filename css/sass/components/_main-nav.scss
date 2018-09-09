@@ -6,12 +6,12 @@
   backdrop-filter: blur(5px);
   right: 0;
   top: 0;
-  max-width: 400px;
-  width: 40vw;
+  max-width: 420px;
+  width: 45vw;
   height: 100vh;
   text-align: center;
   justify-content: center;
-  z-index: 2;
+  z-index: 17;
   overflow: hidden;
 
   @media screen and (max-width: 450px) {
@@ -39,7 +39,7 @@
     font-family: 'KiddyKitty', sans-serif;
     font-size: 38px;
     padding: 12px 5px;
-    color: #ffffff;
+    color: yellow;
     text-decoration: none;
     line-height: normal;
 
@@ -90,7 +90,7 @@
   left: 0;
   /*background: rgba(255, 255, 255, .9) url("../src/image/background/rectangle-3.svg"); */
   background-position: center;
-  -webkit-backdrop-filter: blur(5px);
+  /*-webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(7px);
   backdrop-filter: blur(7px);
@@ -98,8 +98,8 @@
   -webkit-filter: blur(7px);
         -moz-filter: blur(7px);
         -o-filter: blur(7px);
-        -ms-filter: blur(7px);
-        filter: blur(7px);
+        -ms-filter: blur(7px);*/
+        filter: blur(2px);
    -webkit-background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;
