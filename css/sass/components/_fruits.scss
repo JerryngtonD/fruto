@@ -8,7 +8,7 @@
     right: -10px;*/
     
     position: absolute;
-    background-image: url(../src/image/main-product-right.png);
+    background-image: url(../src/image/fruit/main-fruits@2x.png);
     max-width: 660px;
     width: 39%;
     height: 770px;
@@ -17,14 +17,14 @@
     background-size: contain;
     background-position: center;
     bottom: 0px;
-    right: -165px;
+    right: -135px;
 
     @media screen and (min-width: 1281px) {
       max-width: 40vw;
       /*max-height: 470px;*/
       max-height: 50%;
       bottom: 50px;
-      right: -140px;
+      right: -170px;
       height: 100%;
     }
 
@@ -58,15 +58,15 @@
     @media screen and (max-width: 667px) {
       max-width: 195px;
       max-height: 170px;
-      right: -70px;
+      right: -89px;
       top: 195px;
     }
 
     @media screen and (max-width: 450px) {
       max-height: 230px;
       width: 100%;
-      right: -80px;
-      top: 345px;
+      right: -77px;
+      top: 347px;
     }
 
     @media screen and (max-width: 360px) {
