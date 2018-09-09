@@ -4,6 +4,7 @@
   .game-header {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     /*justify-content: space-between;*/
     /*max-width: 500px;*/
     /*height: 280px;
@@ -11,6 +12,10 @@
     object-fit: cover;*/
     margin-bottom: 30px;
    /* background-color: lightgreen;*/
+
+    @media print {
+      margin-bottom: 0;
+    }
   }
 
   .animation {
@@ -71,7 +76,7 @@
       font-weight: 900;
 
       @media print {
-        font-size: 30px;
+        font-size: 26px;
         line-height: 1;
       }
     }
