@@ -7,7 +7,7 @@ const browserSync = require('browser-sync').create();
 const imagemin = require('gulp-imagemin');
 const notify = require('gulp-notify');
 const autoprefixer = require('gulp-autoprefixer');
-const cssmin = require('gulp-cssmin');
+var cssmin = require('gulp-cssmin');
 const rename = require('gulp-rename');
 
 /*SCSS convert in CSS*/
@@ -25,7 +25,14 @@ gulp.task('styles', function(){
             } )
         )
 		.pipe(style())
+        .pipe(autoprefixer({
+            browsers: ['last 3 versions'],
+            cascade: false
+        }))
         .pipe(sourcemaps.write())
+		.pipe(gulp.dest('css/'))
+		.pipe(cssmin())
+        .pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest('css/'))
         .pipe( notify( 'SASS - хорошая работа!'));
 });

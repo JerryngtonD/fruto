@@ -130,7 +130,7 @@ ideaPopupClose.addEventListener('click', function () {
 
 
 
-const currentLevelIdx = 1;
+var currentLevelIdx = 1;
 function openLevelPopup(level) {
     level.addEventListener('click', function (evt) {
         var levelType = level.className.split(' ')[currentLevelIdx];
