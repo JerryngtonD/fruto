@@ -28,7 +28,7 @@
   height: 2900px;
   display: flex;
   padding-top: 70px;
-  margin-bottom: 240px;
+  margin-bottom: 190px;
   border-radius: 15px;
 
   @media screen and (max-width: 1000px)  {
@@ -54,7 +54,7 @@
 
   .copy-right {
     position: absolute;
-    bottom: -150px;
+    bottom: -130px;
     line-height: normal;
     width: 90%;
     font-size: 10px;
@@ -64,8 +64,10 @@
     text-align: center;
 
     @media screen and (min-width: 801px) {
-      color: black;
+      bottom: -150px;
       font-size: 13px;
+      bottom: -110px;
+      text-align: justify;
     }
   }
 }

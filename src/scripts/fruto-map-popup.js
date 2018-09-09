@@ -130,7 +130,7 @@ ideaPopupClose.addEventListener('click', function () {
 
 
 
-const currentLevelIdx = 1;
+var currentLevelIdx = 1;
 function openLevelPopup(level) {
     level.addEventListener('click', function (evt) {
         var levelType = level.className.split(' ')[currentLevelIdx];
@@ -147,8 +147,13 @@ function openLevelPopup(level) {
 
             var levelName = gameBlock.querySelector('.game-title');
             var ingredients = gameBlock.querySelector('.list-items');
+            var needNode = document.createElement('span');
+            needNode.innerHTML = 'Вам понадобится';
+            ingredients.appendChild(needNode);
+
             var description = gameBlock.querySelector('.rules-info .description');
             var productSrc = gameBlock.querySelector('.product-info__image img');
+            var animationSrc = gameBlock.querySelector('.animating');
             var productText = gameBlock.querySelector('.product-info__text .description');
 
             levelName.innerHTML = levelInfo.levelName;
@@ -160,6 +165,8 @@ function openLevelPopup(level) {
             });
             description.innerHTML = levelInfo.description;
             productSrc.setAttribute('src', './' + levelInfo.productSrc);
+            console.log(levelInfo.animationSrc);
+            animationSrc.setAttribute('src', './' + levelInfo.animationSrc);
             productText.innerHTML = levelInfo.productText;
 
             moveBlock.style.display = 'none';

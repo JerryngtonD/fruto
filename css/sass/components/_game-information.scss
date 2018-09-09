@@ -4,6 +4,7 @@
   .game-header {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     /*justify-content: space-between;*/
     /*max-width: 500px;*/
     /*height: 280px;
@@ -11,26 +12,39 @@
     object-fit: cover;*/
     margin-bottom: 30px;
    /* background-color: lightgreen;*/
+
+    @media print {
+      margin-bottom: 0;
+    }
   }
 
   .animation {
-    min-width: 310px;
-    min-height: 210p;
-    max-width: 590px;
+    min-width: 270px;
+    max-width: 50%;
     width: 100%;
     height: 385px;
-    background-image: url("../src/image/animation/example-animation.png");
-    background-repeat: no-repeat;
+    /*background-image: url("../src/image/animation/example-animation.png");*/
+   /* background-repeat: no-repeat;
     -webkit-background-size: contain;
     background-size: contain;
-    background-position: center;
+    background-position: center;*/
     overflow: hidden;
     margin-bottom: 13px;
+
+    @media print {
+      display: none;
+    }
+
+    @media screen and (max-width: 1000px) {
+      max-width: 100%;
+    }
 
     @media screen and (max-width: 800px) {
       max-height: 310px;
       height: 60vw;
     }
+
+
   }
 
   .list-items {
@@ -38,11 +52,20 @@
     margin-left: 45px;
     text-align: left;
 
+
+    @media print {
+      width: 100%;
+    }
     /*list-style-type: none;*/
 
     &__item {
       font-size: 2.2rem;
       line-height: 1.4;
+
+      @media print {
+        font-size: 24px;
+        line-height: normal;
+      }
 
       @media screen and (max-width: 800px) {
         font-size: 12px;
@@ -51,6 +74,11 @@
     span {
       font-size: 22px;
       font-weight: 900;
+
+      @media print {
+        font-size: 26px;
+        line-height: 1;
+      }
     }
 
     @media screen and (max-width: 800px) {

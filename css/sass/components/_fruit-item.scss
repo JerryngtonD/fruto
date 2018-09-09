@@ -66,6 +66,7 @@
       display: block;
       bottom: 0;
       top: 2000px;
+      left: 25vw;
     }
   }
 
@@ -178,7 +179,7 @@
     }
 
     @media screen and (min-width: 1300px) {
-      right: 5%;
+      right: 25%;
     }
   }
 
@@ -190,7 +191,7 @@
     background-image: url("../src/image/fruit/peaches-full.png");
 
     @media screen and (min-width: 1300px) {
-      right: 2vw;
+      right: 23vw;
     }
 
 
@@ -212,8 +213,7 @@
     }
 
     @media screen and (min-width: 801px) {
-      width: 18vw;
-      height: 23vw;
+      width: 20%;
       top: 2200px;
       right: -100px;
     }

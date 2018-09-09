@@ -80,3 +80,14 @@
 /*.contacts--pop .contacts__link:not(last-child); {
   margin-bottom: 10px;
 }*/
+
+
+.contacts__link--map {
+  width: 20px;
+  height: 20px;
+
+  @media screen and (min-width: 801px) {
+    width: 30px;
+    height: 30px;
+  }
+}
