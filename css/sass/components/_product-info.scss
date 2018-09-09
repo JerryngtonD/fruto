@@ -44,10 +44,15 @@
       display: inline-block;
       /*max-width: 400px;*/
       max-width: 58%;
+      margin-bottom: 30px;
 
       @media print {
         max-width: 100%;
         width: 100%;
+      }
+
+      @media screen and (max-width: 1135px) {
+        max-width: 68%;
       }
 
       @media screen and (max-width: 1000px) {
@@ -58,7 +63,7 @@
 
   &__image {
     position: relative;
-    max-width: 40%;
+    max-width: 30%;
 /*    height: 380px;
     overflow: hidden;*/
 
@@ -224,12 +229,9 @@
     background-repeat: no-repeat;
 
     @media screen and (max-width: 1300px) {
-      left: 17vw;
+      left: 191px;
     }
 
-    @media screen and (max-width: 1150px) {
-      left: 18vw;
-    }
 
     @media screen and (max-width: 1000px) {
       display: none;

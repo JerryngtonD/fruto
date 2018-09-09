@@ -22,7 +22,7 @@
     <nav class="main-nav  main-nav--closed">
         <div class="page-header__close"></div>
         <a class="main-nav__link main-nav__link--active" href="fruto-map.html">Карта приключений</a>
-        <a class="main-nav__link" href="form.html">Конкурс</a>
+        <a class="main-nav__link contest">Конкурс</a>
         <a class="main-nav__link" href="rules.html">Правила конкурса</a>
        <!--  <svg id="blur" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 620">
             <path fill="rgba(255, 255, 255, .5)" fill-opacity=".7" fill-rule="evenodd" d="M0 0h243v720H0z"/>
@@ -74,9 +74,65 @@
       </div>
       <!-- <img src="./src/image/map.png" style="position: absolute; width: 100%; height: auto; bottom: 0; object-fit: cover;"> -->
     </main>
+    <div class="popup-overlay popup-idea" style="display: none">
+      <div id="idea-popup" class="popup-item">
+        <img src="./src/images/pop-up-top.png" alt=""/>
+        <div class="popup-body">
+          <span class="popup-close"><img src="./src/images/game-close.png" alt=""/></span>
+          <a href="/" class="popup-logo"><img src="./src/images/fruto-logo.png" alt=""/></a>
+          <img class="prize" src="./src/images/prize.png" alt=""/>
+          <h2>Есть идеи приключений<br />с малышом?</h2>
+          <h3>Присылайте идеи приключений с малышом и участвуйте в конкурсе! Авторы лучших идей получат приз — сертификат в Детский мир на 2000 рублей, а приключения будут опубликованы на сайте!</h3>
+          <form method="post" action="/post/submission" enctype="multipart/form-data">
+            <div class="form-group">
+              <input class="form-control" name="title" placeholder="Название приключения" type="text">
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" name="body" placeholder="Правила"></textarea>
+            </div>
+            <div class="form-group">
+              <input class="hidden" name="image" id="File" type="file">
+              <label class="attachment" for="File">Прикрепить картинку</label>
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="name" placeholder="Ваше имя и фамилия" type="text">
+            </div>
+            <div class="form-group">
+              <input class="form-control" name="email" placeholder="Ваш Email" type="email">
+            </div>
+            <p>
+              <input type="checkbox" class="hidden" id="privacy">
+              <label for="privacy"></label>
+              <span>Нажимая на кнопку «ОТПРАВИТЬ», Вы соглашаетесь с <a href="www.картаприключений.школамам.рф" target="_blank">Пользовательским соглашением</a> об обработке данных</span>
+            </p>
+            <button type="submit" class="btn">Отправить</button>
+          </form>
+          <img class="bee--form" src="./src/images/bee.png" alt=""/>
+        </div>
+        <img src="./src/images/pop-up-bottom.png" alt=""/>
+        <p>Сведения о возрастных ограничениях применения продукции «ФрутоНяня» смотрите на индивидуальной упаковке. Необходима консультация специалиста. Информации об организаторе, правилах проведения конкурса, количестве призов, сроках, месте и порядке их получения смотрите в правилах. Общий срок проведения конкурса: с 13 сентября 2018 по 23 января 2019 г., срок участия в конкурсе: с 13 сентября по 13 октября 2018 года.</p>
+      </div>
+    </div>
     <div class="welcome-footer-bg"></div>
   </div>
   <script type="text/javascript" src="./src/scripts/menu-navigation.min.js"></script>
+  <script>
+      var contestButton = document.querySelector('.contest');
+      var ideaPopupOverlay = document.querySelector('.popup-idea');
+      var ideaPopup = ideaPopupOverlay.querySelector('.popup-item');
+      var ideaPopupClose = ideaPopup.querySelector('.popup-close');
+
+      contestButton.addEventListener('click', function () {
+          ideaPopupOverlay.style.display = 'flex';
+          ideaPopup.style.display = 'block';
+      });
+
+      ideaPopupClose.addEventListener('click', function () {
+          ideaPopupOverlay.style.display = 'none';
+          ideaPopup.style.display = 'none';
+      });
+  </script>
+
 </body>
 
 </html>
