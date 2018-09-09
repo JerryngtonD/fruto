@@ -148,6 +148,8 @@
     @media screen and (max-width: 1280px) {
       max-width: 165px;
       max-height: 160px;
+      width: 165px;
+      height: 160px;
     }
 
     @media screen and (max-width: 1240px) {
@@ -174,7 +176,7 @@
     }
 
     img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
     }
   }
