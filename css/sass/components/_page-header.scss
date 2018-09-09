@@ -52,7 +52,7 @@
     height: 150px;
     cursor: pointer;
     margin-right: 100px;
-    z-index: 5;
+    z-index: 18;
 
     @media screen and (max-width: 1800px) {
       max-width: 115px;
@@ -100,7 +100,7 @@
     top: 53px;
     left: 50%;
     transform: translateX(-50%);
-    z-index: 2;
+    z-index: 18;
 
     @media screen and (max-width: 1800px) {
       max-width: 115px;
@@ -123,8 +123,8 @@
     }
 
     @media screen and (max-width: 667px) {
-      max-width: 45px;
-      max-height: 42px;
+     /* max-width: 45px;
+      max-height: 42px;*/
     }
   }
 
