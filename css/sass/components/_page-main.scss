@@ -91,6 +91,20 @@
     line-height: normal;
     color: #000;
 
+    @media screen and (max-width: 450px) {
+      bottom: 11px;
+    }
+
+    @media screen and (max-width: 350px) {
+      bottom: 5px;
+    }
+
+   /* &--main {
+      @media screen and (max-width: 667px) {
+        display: none;
+      }
+    }*/
+
     &__mobile {
       display: none;
 
