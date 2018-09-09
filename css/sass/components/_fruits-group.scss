@@ -1,8 +1,9 @@
 .fruits-group--linked {
   background-image: url(../src/image/cherry-group.png);
   background-repeat: no-repeat;
-  width: 160px;
+  width: 140px;
   height: 190px;
+  background-size: contain;
 
   @media screen and (max-width: 800px) {
     background-image: url(../src/image/cherry-group-mobile.png);
@@ -10,5 +11,9 @@
     height: 50px;
     position: relative;
     left: -20px;
+  }
+
+  @media screen and (min-width: 801px) {
+    height: 140px;
   }
 }

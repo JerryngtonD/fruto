@@ -23,6 +23,10 @@
       top: 460px;
       width: 150px;
     }
+
+    @media screen and (min-width: 801px) {
+      top: 600px;
+    }
   }
 
   &__left-2 {
@@ -39,29 +43,35 @@
     height: 50px;
     right: 260px;
     background-image: url("../src/image/left-fruit-one-3.png");
+
+    @media screen and (min-width: 801px) {
+      top: 1270px;
+      left: -260px;
+    }
   }
 
   &__left-4 {
     left: 0;
-    bottom: -800px;
-    width: 90px;
-    background-image: url("../src/image/left-fruit-4.png");
+    width: 60px;
+    background-image: url("../src/image/fruit/peaches-full.png");
 
     @media screen and (max-width: 800px) {
-      display: none;
-      bottom: -630px;
+      display: block;
+      top: 1500px;
       z-index: 1;
     }
 
     @media screen and (min-width: 801px) {
+      width: 150px;
       display: block;
-      bottom: -1110px;
+      bottom: 0;
+      top: 2000px;
     }
   }
 
   &__right-1 {
-    top: 370px;
-    right: -180px;
+    top: 80px;
+    right: -170px;
     width: 50px;
     height: 50px;
     background-image: url("../src/image/rigth-fruit-one-1.png");
@@ -102,6 +112,11 @@
       right: 0px;
       z-index: 1;
     }
+
+    @media screen and (min-width: 801px) {
+      top: 1280px;
+      right: -180px;
+    }
   }
 
   &__right-4 {
@@ -116,6 +131,11 @@
       right: -20px;
       width: 30px;
       top: 880px;
+    }
+
+    @media screen and (min-width: 801px) {
+      top: 1350px;
+      right: -140px;
     }
   }
 
@@ -132,6 +152,10 @@
       width: 90px;
       top: 970px;
     }
+
+    @media screen and (min-width: 801px) {
+      top: 1410px;
+    }
   }
 
   &__right-6 {
@@ -139,7 +163,7 @@
     right: 0;
     width: 135px;
     height: 205px;
-    background-image: url("../src/image/right-fruit-7.png");
+    background-image: url("../src/image/fruit/apple-light-full.png");
 
     @media screen and (max-width: 800px) {
       display: block;
@@ -149,19 +173,28 @@
     }
 
     @media screen and (min-width: 801px) {
-      top: 1630px
+      top: 1630px;
+      right: -30px;
+    }
+
+    @media screen and (min-width: 1300px) {
+      right: 5%;
     }
   }
 
   &__right-7 {
     top: 2000px;
-    right: 0;
+    right: -70px;
     width: 70px;
     height: 225px;
     background-image: url("../src/image/fruit/peaches-full.png");
 
-    @media screen and (min-width: 801px) {}
-    top: 1850px;
+    @media screen and (min-width: 1300px) {
+      right: 2vw;
+    }
+
+
+    top: 2100px;
     width: 150px;
   }
 
@@ -173,13 +206,16 @@
     background-image: url("../src/image/right-fruit-9.png");
 
     @media screen and (max-width: 800px) {
-      width: 130px;
+      width: 100px;
       display: block;
       top: 1550px;
     }
 
     @media screen and (min-width: 801px) {
-      width: 150px;
+      width: 18vw;
+      height: 23vw;
+      top: 2200px;
+      right: -100px;
     }
   }
 
@@ -189,5 +225,9 @@
     width: 60px;
     height: 60px;
     background-image: url("../src/image/right-fruit-one-3-5.png");
+
+    @media screen and (min-width: 801px) {
+      top: 1380px;
+    }
   }
 }

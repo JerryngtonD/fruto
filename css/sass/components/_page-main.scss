@@ -23,6 +23,7 @@
   margin-right: auto;
   z-index: 2;
 
+
  /* @media screen and (min-width: )*/
 
   @media screen and (min-width: 1281px) {
@@ -56,7 +57,7 @@
   @media screen and (max-width: 667px) {
     max-width: 450px;
     min-height: 290px;
-    background-position: -11px 130px;
+    background-position: -11px 75px;
   }
 
   @media screen and (max-width: 450px) {
@@ -100,7 +101,7 @@
 
 
     &__desktop {
-      
+
       @media screen and (max-width: 1280px) {
         display: none;
       }
@@ -111,6 +112,7 @@
 .adventure-page {
     overflow: hidden;
 	padding-top: 180px;
+    position: relative;
 
   @media screen and (max-width: 800px) {
     padding-top: 60px;

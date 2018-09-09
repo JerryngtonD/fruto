@@ -54,10 +54,10 @@
     background-repeat: no-repeat;
     transition: transform .3s ease;
 
-    @media screen and (max-width: 800px) {
+    /*@media screen and (max-width: 800px) {
       width: 18px;
       height: 18px;
-    }
+    }*/
 
     &:hover {
       transform: scale(1.1);
