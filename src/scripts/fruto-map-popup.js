@@ -64,8 +64,71 @@ var overlay = document.querySelector('.overlay');
 var pageHeaderToggle = document.querySelector('.page-header__toggle');
 var mainNav = document.querySelector('.main-nav');
 var moveBlock = document.querySelector('.move-wrapper');
-var contentHeight = document.querySelector('.bg-wrapper--map')
-var fruitItem = document.querySelector('.fruit-item__left-4')
+var contentHeight = document.querySelector('.bg-wrapper--map');
+var fruitItem = document.querySelector('.fruit-item__left-4');
+
+
+
+var soonButton = document.querySelector('.level__item--date');
+var soonPopupOverlay = document.querySelector('.date-popup');
+var soonPopup = soonPopupOverlay.querySelector('.popup-item');
+var soonPopupClose = soonPopup.querySelector('.popup-close');
+
+var levelQuestion = document.querySelector('.level__item--sign');
+
+soonButton.addEventListener('click', function (evt) {
+    soonPopupOverlay.style.display = 'flex';
+    soonPopup.style.display = 'block';
+});
+
+soonPopupClose.addEventListener('click', function () {
+    soonPopupOverlay.style.display = 'none';
+    soonPopup.style.display = 'none';
+});
+
+
+var ideaButton = document.querySelector('.level__item--sign');
+var contestButton = document.querySelector('.contest');
+var beeTopButton = document.querySelector('.img-block--top');
+var beeBottomButton = document.querySelector('.img-block--bottom');
+
+var ideaPopupOverlay = document.querySelector('.popup-idea');
+var ideaPopup = ideaPopupOverlay.querySelector('.popup-item');
+var ideaPopupClose = ideaPopup.querySelector('.popup-close');
+
+
+ideaButton.addEventListener('click', function (evt) {
+    ideaPopupOverlay.style.display = 'flex';
+    ideaPopup.style.display = 'block';
+});
+
+contestButton.addEventListener('click', function () {
+    ideaPopupOverlay.style.display = 'flex';
+    ideaPopup.style.display = 'block';
+});
+
+
+beeTopButton.addEventListener('click', function () {
+    ideaPopupOverlay.style.display = 'flex';
+    ideaPopup.style.display = 'block';
+});
+
+beeBottomButton.addEventListener('click', function () {
+    ideaPopupOverlay.style.display = 'flex';
+    ideaPopup.style.display = 'block';
+});
+
+ideaPopupClose.addEventListener('click', function () {
+    ideaPopupOverlay.style.display = 'none';
+    ideaPopup.style.display = 'none';
+});
+
+
+
+
+
+
+
 
 const currentLevelIdx = 1;
 function openLevelPopup(level) {
