@@ -86,9 +86,6 @@
   /* @media screen and (min-width: 2500px) {
     top: 0;
     left: 0;
-  }*/
-  /*  @media screen and (max-width: 667px) {
-    padding: 10px 10px;
   }*/ }
 
 @media screen and (max-width: 450px) {
@@ -106,6 +103,11 @@
     transform: translateX(-50%);
     padding: 0 25px;
     top: 70px; } }
+
+@media screen and (max-width: 667px) {
+  .page-header {
+    padding-top: 10px;
+    padding-left: 10px; } }
 
 .page-header__log {
   width: 10%; }
@@ -328,7 +330,20 @@
   transform: translateX(-50%);
   text-align: center;
   line-height: normal;
-  color: #000; }
+  color: #000;
+  /* &--main {
+      @media screen and (max-width: 667px) {
+        display: none;
+      }
+    }*/ }
+
+@media screen and (max-width: 450px) {
+  .page-main .copy-right {
+    bottom: 11px; } }
+
+@media screen and (max-width: 350px) {
+  .page-main .copy-right {
+    bottom: 5px; } }
 
 .page-main .copy-right__mobile {
   display: none; }
@@ -398,6 +413,10 @@
   background-size: cover;
   z-index: 1; }
 
+@media screen and (max-width: 667px) {
+  .welcome-footer-bg {
+    height: 12vw; } }
+
 @media screen and (max-width: 450px) {
   .welcome-footer-bg {
     height: 43vh; } }
@@ -466,7 +485,7 @@
 
 @media screen and (max-width: 450px) {
   .adventure-map {
-    margin-bottom: 76%; } }
+    margin-bottom: 70%; } }
 
 @media screen and (max-width: 350px) {
   .adventure-map {
@@ -665,18 +684,18 @@
 
 @media screen and (max-width: 667px) {
   .product-content {
-    max-width: 180px;
+    max-width: 280px;
     max-height: 170px;
-    left: -80px;
+    left: -105px;
     bottom: 25px; } }
 
 @media screen and (max-width: 450px) {
   .product-content {
     background-image: url(../src/image/pack@2x.png);
-    max-width: 153px;
-    max-height: 230px;
-    left: -5px;
-    bottom: 100px; } }
+    max-width: 130px;
+    max-height: 217px;
+    left: 6px;
+    bottom: 89px; } }
 
 @media screen and (max-width: 360px) {
   .product-content {
@@ -694,7 +713,7 @@
     bottom: 60px;
     right: -10px;*/
   position: absolute;
-  background-image: url(../src/image/main-product-right.png);
+  background-image: url(../src/image/fruit/main-fruits@2x.png);
   max-width: 660px;
   width: 39%;
   height: 770px;
@@ -703,7 +722,7 @@
   background-size: contain;
   background-position: center;
   bottom: 0px;
-  right: -165px; }
+  right: -135px; }
 
 @media screen and (min-width: 1281px) {
   .fruits {
@@ -711,7 +730,7 @@
     /*max-height: 470px;*/
     max-height: 50%;
     bottom: 50px;
-    right: -140px;
+    right: -170px;
     height: 100%; } }
 
 @media screen and (min-width: 1800px) {
@@ -744,15 +763,15 @@
   .fruits {
     max-width: 195px;
     max-height: 170px;
-    right: -70px;
+    right: -89px;
     top: 195px; } }
 
 @media screen and (max-width: 450px) {
   .fruits {
     max-height: 230px;
     width: 100%;
-    right: -80px;
-    top: 345px; } }
+    right: -77px;
+    top: 347px; } }
 
 @media screen and (max-width: 360px) {
   .fruits {
@@ -841,17 +860,17 @@
 
 @media screen and (max-width: 667px) {
   .bee {
-    top: 110px;
+    top: 102px;
     left: -107px;
     width: 124px;
     height: 75px; } }
 
 @media screen and (max-width: 450px) {
   .bee {
-    width: 128px;
-    height: 105px;
-    left: -41px;
-    top: 260px; } }
+    width: 125px;
+    height: 100px;
+    left: -30px;
+    top: 285px; } }
 
 @media screen and (max-width: 360px) {
   .bee {
@@ -910,7 +929,7 @@
 @media screen and (min-width: 801px) {
   .player-map .bee::after {
     width: 170px;
-    top: 107px;
+    top: 105px;
     left: 0;
     height: 86px; } }
 
@@ -1220,10 +1239,11 @@
 @media screen and (max-width: 667px) {
   .adventure-map__button {
     font-size: 10px;
-    /*height: 25px;*/
     margin-top: 10px;
-    padding-top: 6px;
-    line-height: 15px; } }
+    padding: 5px 40px;
+    line-height: 15px;
+    letter-spacing: normal;
+    margin-bottom: 10px; } }
 
 @media screen and (max-width: 450px) {
   .adventure-map__button {

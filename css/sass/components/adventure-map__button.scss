@@ -43,10 +43,11 @@
 
   @media screen and (max-width: 667px) {
     font-size: 10px;
-    /*height: 25px;*/
     margin-top: 10px;
-    padding-top: 6px;
+    padding: 5px 40px;
     line-height: 15px;
+    letter-spacing: normal;
+    margin-bottom: 10px;
   }
 
   @media screen and (max-width: 450px) {
