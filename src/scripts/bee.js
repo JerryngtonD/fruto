@@ -21,7 +21,7 @@ $(document).ready(function(){
     }
 
     else if ($( window ).width() >= 801) {
-        topField = 170;
+        topField = 100;
         $('.move-wrapper').unstick();
         $('.move-wrapper').css({'top': topField});
         $('.move-wrapper').sticky({topSpacing: topField, zIndex: 13});
@@ -47,7 +47,7 @@ $( window ).resize(function() {
         $('.move-wrapper').sticky({topSpacing: topField, zIndex: 13});
 
     } else if ($( window ).width() >= 801 ) {
-        topField = 170;
+        topField = 100;
         $('.move-wrapper').unstick();
         $('.move-wrapper').css({'top': topField});
         $('.move-wrapper').sticky({topSpacing: topField, zIndex: 13});

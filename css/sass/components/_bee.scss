@@ -111,7 +111,6 @@
   top: 240px;
   max-height: 280px;
 
-
   &:before {
     display: none;
   }
@@ -131,6 +130,12 @@
     height: 130px;
   }
 
+  @media screen and (min-width: 801px) {
+    width: 170px;
+    height: 190px;
+    left: -30px;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -147,6 +152,13 @@
       top: 70px;
       left: 0px;
       height: 59px;
+    }
+
+    @media screen and (min-width: 801px) {
+      width: 170px;
+      top: 107px;
+      left: 0;
+      height: 86px;
     }
   }
 }

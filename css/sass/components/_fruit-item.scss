@@ -44,13 +44,18 @@
   &__left-4 {
     left: 0;
     bottom: -800px;
-    width: 115px;
+    width: 90px;
     background-image: url("../src/image/left-fruit-4.png");
 
     @media screen and (max-width: 800px) {
-      display: block;
-      bottom: -1100px;
+      display: none;
+      bottom: -630px;
       z-index: 1;
+    }
+
+    @media screen and (min-width: 801px) {
+      display: block;
+      bottom: -1110px;
     }
   }
 
@@ -76,6 +81,10 @@
       width: 90px;
       right: -30px;
       top: 400px;
+    }
+
+    @media screen and (min-width: 801px) {
+      top: 600px;
     }
   }
 
@@ -149,7 +158,11 @@
     right: 0;
     width: 70px;
     height: 225px;
-    background-image: url("../src/image/right-fruit-8.png");
+    background-image: url("../src/image/fruit/peaches-full.png");
+
+    @media screen and (min-width: 801px) {}
+    top: 1850px;
+    width: 150px;
   }
 
   &__right-8 {
@@ -163,6 +176,10 @@
       width: 130px;
       display: block;
       top: 1550px;
+    }
+
+    @media screen and (min-width: 801px) {
+      width: 150px;
     }
   }
 

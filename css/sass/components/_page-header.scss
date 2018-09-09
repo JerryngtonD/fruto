@@ -18,11 +18,12 @@
       padding: 10px 5px;
     }
 
+
     @media screen and(max-width: 800px) {
       width: 90vw;
       left: 50%;
       transform: translateX(-50%);
-      padding: 0 35px;
+      padding: 0 25px;
       top: 70px;
     }
   }
