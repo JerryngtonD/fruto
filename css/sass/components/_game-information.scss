@@ -27,6 +27,10 @@
     overflow: hidden;
     margin-bottom: 13px;
 
+    @media print {
+      display: none;
+    }
+
     @media screen and (max-width: 800px) {
       max-height: 310px;
       height: 60vw;
@@ -38,11 +42,20 @@
     margin-left: 45px;
     text-align: left;
 
+
+    @media print {
+      width: 100%;
+    }
     /*list-style-type: none;*/
 
     &__item {
       font-size: 2.2rem;
       line-height: 1.4;
+
+      @media print {
+        font-size: 24px;
+        line-height: normal;
+      }
 
       @media screen and (max-width: 800px) {
         font-size: 12px;
@@ -51,6 +64,11 @@
     span {
       font-size: 22px;
       font-weight: 900;
+
+      @media print {
+        font-size: 30px;
+        line-height: 1;
+      }
     }
 
     @media screen and (max-width: 800px) {
