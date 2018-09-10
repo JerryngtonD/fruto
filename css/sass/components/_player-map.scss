@@ -35,6 +35,10 @@
     max-width: 90vw;
   }
 
+  @media screen and (max-width: 400px) {
+    padding-top: 45px;
+  }
+
   .block-header {
     position: absolute;;
     width: 100%;
