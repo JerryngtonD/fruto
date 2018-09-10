@@ -113,6 +113,10 @@
     padding-bottom: 30px;
   }
 
+  @media screen and (max-width: 320px) {
+    padding-bottom: 10px;
+  }
+
   &--content {
     width: 100%;
     position: relative;

@@ -504,8 +504,13 @@
     /*left: -75px;
     top: 70px;*/
 
-    left: -75px;
+   /* left: -75px;
     top: 85px;
+    top: 0px;*/
+    top: -28px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px;
   }
 
   @media screen and (min-width: 801px) {
@@ -519,8 +524,9 @@
   /*  left: -80px;
     top: 60px;*/
 
-    left: -80px;
-    top: 80px;
+   /* left: -80px;*/
+    left: 0;
+    /*top: 80px;*/
   }
 
   .level__item--future {
@@ -532,13 +538,20 @@
 
   .level__item--date {
     position: relative;
-    top: -95px;
-    left: 90px;;
+    /*top: -95px;*/
+    /*left: 90px;*/
+   /* left: 50%;*/
     background-position-y: 0px;
     padding-top: 30px;
 
     background-image: url(../src/image/level-date.png);
     background-repeat: no-repeat;
+    /*transform: translateX(-50%);*/
+
+    @media screen and (min-width: 801px) {
+      top: -100px;
+      left: 90px;
+    }
 
     .level__сaption {
       position: absolute;
@@ -565,8 +578,19 @@
     background-position-y: 45px;
 
     @media screen and (max-width: 800px) {
-      top: -80px;
-      left: 90px;
+      /*top: -80px;
+      left: 90px;*/
+      /*left: 50%;
+      transform: translateX(-50%);*/
+    }
+
+    @media screen and (min-width: 801px) {
+      top: 15px;
+      left: 75px;
+    }
+
+    @media screen and (max-width: 800px) {
+      left: 0;
     }
   }
 }
