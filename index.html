@@ -38,7 +38,11 @@
         </svg> -->
       </nav>
     <main class="page-main">
-      <div class="page-main__content bee bee--locus"></div>
+      <div class="page-main__content bee bee--locus">
+        <div class="bee__description">
+          <span class="bee__content">А как вы проводите время с малышом? Присылайте идеи и получайте призы!</span>
+        </div>
+      </div>
 
       <div class="product-content"></div>
       <div class="page-main__content fruits"></div>
@@ -130,6 +134,12 @@
       ideaPopupClose.addEventListener('click', function () {
           ideaPopupOverlay.style.display = 'none';
           ideaPopup.style.display = 'none';
+      });
+
+      var suggestCloud = document.querySelector('.bee__description');
+      suggestCloud.addEventListener('click', function () {
+          ideaPopupOverlay.style.display = 'flex';
+          ideaPopup.style.display = 'block';
       });
   </script>
 

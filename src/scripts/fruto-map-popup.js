@@ -92,6 +92,13 @@ var contestButton = document.querySelector('.contest');
 var beeTopButton = document.querySelector('.img-block--top');
 var beeBottomButton = document.querySelector('.img-block--bottom');
 
+var beeDescriptionButton = document.querySelector('.bee__description');
+
+beeDescriptionButton.addEventListener('click', function (evt) {
+    ideaPopupOverlay.style.display = 'flex';
+    ideaPopup.style.display = 'block';
+});
+
 var ideaPopupOverlay = document.querySelector('.popup-idea');
 var ideaPopup = ideaPopupOverlay.querySelector('.popup-item');
 var ideaPopupClose = ideaPopup.querySelector('.popup-close');
@@ -122,11 +129,6 @@ ideaPopupClose.addEventListener('click', function () {
     ideaPopupOverlay.style.display = 'none';
     ideaPopup.style.display = 'none';
 });
-
-
-
-
-
 
 
 

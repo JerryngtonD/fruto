@@ -22,15 +22,117 @@
   /* max-height: 150px; */
   z-index: 3;
 
+  &--locus {
+    top: 0;
+    position: absolute;
+    width: 220px;
+    height: 250px;
+    left: -110px;
+    z-index: 10;
+
+    @media screen and (max-width: 800px) {
+      left: -10px;
+      width: 114px;
+      height: 130px;
+    }
+
+    @media screen and (min-width: 801px) {
+      width: 170px;
+      height: 190px;
+      left: -30px;
+    }
+
+    .bee__content {
+      @media screen and (min-width: 668px)  and (max-width: 800px){
+        left: 357px;
+        top: 40px;
+      }
+
+      @media screen and (min-width: 801px) {
+        left: 347px;
+        top: 50px;
+      }
+    }
+
+    .bee__description {
+      position: absolute;
+      font-size: 18px;
+      font-family: 'KiddyKitty', sans-serif;
+      top: -160px;
+      left: -225px;
+      width: 360px;
+      height: 210px;
+      text-align: center;
+      padding-top: 55px;
+      z-index: 2;
+      display: none;
+      transition: opacity 0.3s cubic-bezier(0.19, 0.86, 0.41, 0.68);
+
+      @media screen and (min-width: 2500px) {
+        left: 120px;
+        top: -150px;
+      }
+
+      @media screen and (max-width: 2500px) {
+        left: 220px;
+        top: -150px;
+      }
+
+      @media screen and (max-width: 2000px) {
+        left: -230px;
+        top: -160px;
+      }
+
+      @media screen and (max-width: 1400px) {
+        left: -150px;
+        top: -180px;
+      }
+
+      @media screen and (max-width: 800px) {
+        left: -120px;
+        top: -110px;
+      }
+
+
+      @media screen and (max-width: 667px) {
+        padding-top: 30px;
+        top: -100px;
+        left: -260px;
+        width: 310px;
+      }
+
+      &:after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 320px;
+        top: 0;
+        background-image: url(../src/image/cloud/cloud-right.png);
+        background-repeat: no-repeat;
+        -webkit-background-size: contain;
+        background-size: contain;
+        z-index: -1;
+
+        @media screen and (max-width: 800px) {
+          width: 70%;
+        }
+      }
+    }
+  }
+
   &:hover,
   &:focus {
     .bee__description {
       display: block;
+      z-index: 10;
     }
     .bee__content {
       display: block;
     }
   }
+
+
 
   @media screen and (min-width: 1281px) {
     left: -44%;
@@ -153,7 +255,7 @@
       left: 0px;
       height: 59px;
     }
-    
+
     @media screen and (min-width: 801px) {
       width: 170px;
       top: 105px;
