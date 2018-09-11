@@ -2,7 +2,7 @@
   /*max-width: 485px;
   width: 100%;*/
 
-  width: 100%;
+  width: 70%;
   /*max-width: 485px;*/
   max-width: 970px;
   width: 57.83133%;
@@ -18,6 +18,8 @@
   margin: 0 auto;
   margin-bottom: 7px;
   /*background-color: #091;*/
+
+
 
   @media screen and (min-width: 1281px) {
     max-height: 155px;
@@ -66,7 +68,7 @@
   }
 
   @media screen and (max-width: 360px) {
-    max-width: 219px; 
+    max-width: 219px;
   }
 
   &--adventure {
@@ -78,10 +80,12 @@
     @media screen and (max-width: 1280px) {
       max-height: 135px;
       height: 100%;
+      width: 60%;
      /* margin-bottom: 45px;*/
     }
 
     @media screen and (max-width: 800px) {
+      width: 100%;
       position: relative;
       z-index: 12;
       max-height: 75px;
