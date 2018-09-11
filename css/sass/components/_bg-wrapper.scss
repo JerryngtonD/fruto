@@ -11,9 +11,9 @@
   align-items: flex-start;
   overflow-x: hidden;
 
-  @media screen and (min-width: 1281px) {
+  /*@media screen and (min-width: 1281px) {
     padding-top: 180px;
-  }
+  }*/
 
   @media screen and (max-width: 1280px) {
     min-height: 760px;
@@ -61,8 +61,12 @@
   height: 100%;
   overflow: hidden;*/
 
+@media screen and (min-width: 801px) {
+  background-color: #9e7a58;
+}
 
 @media screen and (max-width: 800px) {
+    background-color: #4b890b;
     background-image: url('../src/image/background/mobile-grass@2x.jpg');
     background-size: auto;
   }
