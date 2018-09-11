@@ -93,6 +93,13 @@
   color: #000000;
   margin-bottom: 10px;
 
+  &--body {
+    @media screen and (max-width: 600px) {
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+
   @media screen and (max-width: 750px) {
     font-size: 19px;
   }
@@ -105,6 +112,10 @@
 .rules-list {
   counter-reset: heading;
   list-style-type: none;
+
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+  }
 
 
   > li::before {
