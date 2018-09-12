@@ -51,12 +51,17 @@ if (!Array.prototype.includes) {
 
 var levelItems = Array.prototype.slice.call(document.querySelectorAll('.level__item'))
     .filter(function (level) {
-        if (Array.prototype.slice.call(level.classList).includes('level__item--future')) {
+        if (Array.prototype.slice.call(level.classList).includes('wait-block')) {
             return;
         } else {
             return level;
         }
     });
+
+
+
+
+
 
 var gameBlock = document.querySelector('.game-block');
 var closePopupBtn = document.querySelector('.btn-close');
@@ -74,7 +79,7 @@ var soonPopupOverlay = document.querySelector('.date-popup');
 var soonPopup = soonPopupOverlay.querySelector('.popup-item');
 var soonPopupClose = soonPopup.querySelector('.popup-close');
 
-var levelQuestion = document.querySelector('.level__item--sign');
+var levelQuestion = document.querySelector('.level__item--wait');
 
 soonButton.addEventListener('click', function (evt) {
     soonPopupOverlay.style.display = 'flex';
@@ -87,7 +92,15 @@ soonPopupClose.addEventListener('click', function () {
 });
 
 
-var ideaButton = document.querySelector('.level__item--sign');
+var ideaButtons = document.querySelectorAll('.wait-block:not(.level__item--date)');
+
+ideaButtons.forEach(function (ideaButton) {
+    ideaButton.addEventListener('click', function () {
+        ideaPopupOverlay.style.display = 'flex';
+        ideaPopup.style.display = 'block';
+    })
+});
+
 var contestButton = document.querySelector('.contest');
 var beeTopButton = document.querySelector('.img-block--top');
 var beeBottomButton = document.querySelector('.img-block--bottom');
@@ -102,12 +115,6 @@ beeDescriptionButton.addEventListener('click', function (evt) {
 var ideaPopupOverlay = document.querySelector('.popup-idea');
 var ideaPopup = ideaPopupOverlay.querySelector('.popup-item');
 var ideaPopupClose = ideaPopup.querySelector('.popup-close');
-
-
-ideaButton.addEventListener('click', function (evt) {
-    ideaPopupOverlay.style.display = 'flex';
-    ideaPopup.style.display = 'block';
-});
 
 contestButton.addEventListener('click', function () {
     ideaPopupOverlay.style.display = 'flex';
