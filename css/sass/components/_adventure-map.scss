@@ -121,11 +121,14 @@
     width: 100%;
     position: relative;
     top: -165px;
+    margin-bottom: -165px;
 
     @media screen and (max-width: 800px) {
       top: 20px;
+      margin-bottom: 130px;
      /* z-index: 10;*/
     }
+
   }
 }
 
