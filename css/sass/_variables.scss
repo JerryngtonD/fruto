@@ -1,9 +1,3 @@
-$main-color: #000000;
-$secondary-color: #383838;
-
-$main-bg-color: #ffffff;
-
-
 /* Breakpoints
 ----------------------------------------- */
 $bmobile: 800px;
@@ -23,16 +17,16 @@ $fbold: 	700;
 $font-family: 'Myriad Pro', sans-serif;
 $font-path: '../fonts/';
 $fonts: (
-        reg: 	KiddyKitty,
-        bold: 	KiddyKitty-Bold
+	reg: 	KiddyKitty,
+	bold: 	KiddyKitty-Bold
 );
 
 @each $font, $name in $fonts {
-  @font-face {
-    font-family: '' + $name + '';
-    src: url($font-path + $name + '.woff2') format('woff2'),
-    url($font-path + $name + '.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-  }
+	@font-face {
+		font-family: '' + $name + '';
+		src: url($font-path + $name + '.woff2') format('woff2'),
+			 url($font-path + $name + '.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+	}
 }

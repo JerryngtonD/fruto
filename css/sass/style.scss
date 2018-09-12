@@ -63,24 +63,3 @@ html {
 .hidden {
   display: none;
 }
-
-body {
-  display: flex;
-  min-height: 100vh;
-  height: 100%;
-  flex-direction: column;
-  font-family: 'Myriad Pro', sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  color: $main-color;
-  background-color: $main-bg-color;
-  box-sizing: border-box;
-  font-size: 1.6rem;
-  overflow-x: hidden;
-}
-
-.wrapper {
-  max-width: 1200px;
-  width: 100%;
-  margin: 0 auto;
-}
