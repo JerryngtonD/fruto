@@ -1,4 +1,4 @@
-var topField;
+/*var topField;
 $('.move-wrapper').hover(function() {
     $( this ).css({zIndex: 13});
 });
@@ -95,5 +95,40 @@ $(window).on( 'scroll', function() {
           }
         }
         lastScrollTop = st;
+    }
+});*/
+
+$('.move-wrapper').hover(function() {
+    $( this ).css({zIndex: 13});
+});
+
+var topField;
+
+$(document).ready(function(){
+    if ($( window ).width() < 390) {
+        topField = 170;
+        $('.move-wrapper').unstick();
+        $('.move-wrapper').css({'top': topField});
+        $('.move-wrapper').sticky({zIndex: 13});
+
+    } else if ($( window ).width() >= 391 && $( window ).width() < 400) {
+        topField = 220;
+        $('.move-wrapper').unstick();
+        $('.move-wrapper').css({'top': topField});
+        $('.move-wrapper').sticky({zIndex: 13});
+
+    } else if ($( window ).width() >= 400 && $( window ).width() < 801)  {
+        topField = 280;
+        $('.move-wrapper').unstick();
+        $('.move-wrapper').css({'top': topField});
+        $('.move-wrapper').sticky({zIndex: 13});
+
+    }
+
+    else if ($( window ).width() >= 801) {
+        topField = 100;
+        $('.move-wrapper').unstick();
+        $('.move-wrapper').css({'top': topField});
+        $('.move-wrapper').sticky({zIndex: 13});
     }
 });
