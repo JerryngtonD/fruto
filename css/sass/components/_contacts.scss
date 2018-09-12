@@ -65,8 +65,12 @@
     }
 
     &--fb {
-      margin-top: 35px;
+      margin-top: 25px;
       background-image: url(../src/image/icon/fb.svg);
+
+      @media screen and (min-width: 801px) {
+        margin-top: 35px;
+      }
     }
 
     &--vk {
