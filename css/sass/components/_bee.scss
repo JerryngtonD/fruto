@@ -87,8 +87,9 @@
         top: -160px;
       }
 
+
       @media screen and (max-width: 1400px) {
-        left: 170px;
+        left: -140px;
         top: -180px;
       }
 
@@ -103,6 +104,10 @@
         top: -100px;
         left: -260px;
         width: 310px;
+      }
+
+      @media screen and (min-width: 1281px) and (max-width: 1600px) {
+        left: 15vw;
       }
 
       &:after {
