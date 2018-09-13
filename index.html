@@ -123,6 +123,7 @@
       var ideaPopupOverlay = document.querySelector('.popup-idea');
       var ideaPopup = ideaPopupOverlay.querySelector('.popup-item');
       var ideaPopupClose = ideaPopup.querySelector('.popup-close');
+      var mainNav = document.querySelector('.main-nav');
 
       contestButton.addEventListener('click', function () {
           ideaPopupOverlay.style.display = 'flex';
@@ -136,6 +137,7 @@
 
       var suggestCloud = document.querySelector('.bee__description');
       suggestCloud.addEventListener('click', function () {
+          mainNav.classList.add('main-nav--closed');
           ideaPopupOverlay.style.display = 'flex';
           ideaPopup.style.display = 'block';
       });

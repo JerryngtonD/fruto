@@ -105,9 +105,10 @@ var contestButton = document.querySelector('.contest');
 var beeTopButton = document.querySelector('.img-block--top');
 var beeBottomButton = document.querySelector('.img-block--bottom');
 
-var beeDescriptionButton = document.querySelector('.bee__description');
+var beeDescriptionButton = document.querySelector('.bee');
 
 beeDescriptionButton.addEventListener('click', function (evt) {
+    mainNav.classList.add('main-nav--closed');
     ideaPopupOverlay.style.display = 'flex';
     ideaPopup.style.display = 'block';
 });
@@ -140,6 +141,7 @@ ideaPopupClose.addEventListener('click', function () {
 
 
 var currentLevelIdx = 1;
+var viewPort = document.querySelector('.bg-wrapper--map');
 function openLevelPopup(level) {
     level.addEventListener('click', function (evt) {
         var levelType = level.className.split(' ')[currentLevelIdx];
@@ -178,6 +180,8 @@ function openLevelPopup(level) {
             animationSrc.setAttribute('src', './' + levelInfo.animationSrc);
             productText.innerHTML = levelInfo.productText;
 
+            mainNav.classList.add('main-nav--closed');
+            viewPort.classList.add('bg-wrapper--map-popup');
             moveBlock.style.display = 'none';
             overlay.style.display = 'block';
             gameBlock.style.display = "block";
@@ -194,6 +198,7 @@ levelItems.forEach(function(levelItem) {
 
 
 function closeAndClearPopup() {
+    viewPort.classList.remove('bg-wrapper--map-popup');
     moveBlock.style.display = 'block';
     overlay.style.display = 'none';
     var ingredients = gameBlock.querySelector('.list-items');

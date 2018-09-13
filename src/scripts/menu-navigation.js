@@ -11,3 +11,4 @@ burgerClose.addEventListener('click', function (evt) {
     var menuBar = document.querySelector('.main-nav');
     menuBar.classList.toggle('main-nav--closed');
 });
+
