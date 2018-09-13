@@ -11,9 +11,9 @@
   align-items: flex-start;
   overflow-x: hidden;
 
-  /*@media screen and (min-width: 1281px) {
-    padding-top: 180px;
-  }*/
+  @media screen and (min-width: 2500px) {
+    min-height: 1180px;
+  }
 
   @media screen and (max-width: 1280px) {
     min-height: 760px;

@@ -215,6 +215,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   display: none;
+  cursor: pointer;
 
   @media print {
     display: none;
@@ -269,7 +270,7 @@
     }
 
     @media screen and (max-width: 800px) {
-      width: 102px;
+      width: 135px;
       height: 132px;
     }
   }
