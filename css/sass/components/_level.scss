@@ -31,6 +31,7 @@
   }
 
   &-3 {
+    display: none;
     justify-content: center;
     padding-right: 5%;
     padding-top: 50px;
@@ -41,11 +42,13 @@
   }
 
   &-4 {
+    display: none;
     width: 100%;
     justify-content: center;
   }
 
   &-5 {
+    display: none;
     width: 100%;
     justify-content: center;
     height: 170px;
@@ -270,14 +273,19 @@
 
     @media screen and (max-width: 800px) {
       width: 110px;
-      margin-bottom: 95px;
+      margin-bottom: 130px;
      /* margin-bottom: 110px;*/
+    }
+
+    @media screen and (min-width: 801px) {
+      margin-bottom: 120px;
     }
 
     &:after {
       content: "";
       position: absolute;
       background-image: url(../src/image/path-4.png);
+      //background-image: url(../src/image/background/path-14.png);
       background-repeat: no-repeat;
       width: 250px;
       height: 230px;
@@ -288,12 +296,20 @@
         background-image: url(../src/image/path-mobile-4.png);
         top: 200px;
         left: 50px;
+        width: 30px;
+        height: 85px;
+      }
+
+      @media screen and (min-width: 801px) {
+        top: 25px;
+        left: -230px;
       }
     }
 
     @media screen and (max-width: 800px) {
       left: 0;
     }
+
   }
 
   &__item-4 {
@@ -489,8 +505,8 @@
     top: -100px;
 
     @media screen and (min-width: 801px) {
-      right: 165px;
-      top: -200px;
+      right: 265px;
+      top: -110px;
     }
 
     @media screen and (max-width: 800px) {
@@ -528,8 +544,10 @@
       }
 
       @media screen and (min-width: 801px) {
-        top: 160px;
-        left: 130px;
+        background-image: url(../src/image/background/path-19.png);
+        top: 145px;
+        left: 80px;
+        width: 320px;
       }
     }
   }
@@ -538,7 +556,7 @@
     width: 146px;
     height: 146px;
     top: -115px;
-    transform: translateX(89px);
+    transform: translateX(80px);
 
     &::after {
       content: "";
@@ -761,12 +779,116 @@
     &::after {
       content: "";
       position: absolute;
-      /*background-image: url(../src/image/background/path-20.png);*/
+      background-image: url(../src/image/background/path-13.png);
       background-repeat: no-repeat;
       width: 250px;
       height: 240px;
       top: 140px;
       left: -30px;
+    }
+  }
+
+  &__item-21 {
+    width: 146px;
+    height: 146px;
+
+    @media screen and (min-width: 801px) {
+      top: -230px;
+      transform: translateX(-180%);
+      left: 48%;
+    }
+  }
+
+
+  &__item-91 {
+    position: relative;
+    width: 146px;
+    height: 146px;
+    top: -130px;
+
+    @media screen and (min-width: 801px) {
+      left: 50%;
+      transform: translateX(-230%);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../src/image/path-5.png);
+
+      background-repeat: no-repeat;
+      width: 290px;
+      height: 90px;
+      top: 105px;
+      left: 100px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url(../src/image/level-date.png);
+      width: 180px;
+      height: 70px;
+      background-size: contain;
+      top: -30px;
+      left: -20px;
+      background-repeat: no-repeat;
+    }
+
+    .level__сaption {
+      width: 100%;
+      text-align: center;
+      font-size: 20px;
+      font-family: KiddyKitty;
+      text-align: center;
+      display: block;
+      position: absolute;
+      top: 55px;
+    }
+  }
+
+  &__item-92 {
+    width: 146px;
+    height: 146px;
+    top: -130px;
+
+    @media screen and (min-width: 801px) {
+      transform: translateX(-65%);
+      left: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../src/image/path-6.png);
+      background-repeat: no-repeat;
+      width: 300px;
+      height: 230px;
+      top: 140px;
+      left: -80px;
+    }
+  }
+
+  &__item-93 {
+    width: 146px;
+    height: 146px;
+    top: -130px;
+
+    @media screen and (min-width: 801px) {
+      transform: translateX(-120%);
+      top: -130px;
+      left: 50%;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-image: url(../src/image/background/path-11.png);
+      background-repeat: no-repeat;
+      width: 300px;
+      height: 230px;
+      top: 140px;
+      left: 130px;
     }
   }
 }
