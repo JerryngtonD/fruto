@@ -3,14 +3,12 @@
   height: 400px;
   padding: 20px;
   position: relative;
-
-  background: url(../src/image/pop-up-top.png) center top no-repeat,
-  url(../src/image/pop-up-bottom.png) 0 bottom no-repeat,
-  url(../src/image/pop-up-middle.jpg) center 0 repeat-y;
+  background: url(../src/image/pop-up-top.png) center top no-repeat, url(../src/image/pop-up-bottom.png) 0 bottom no-repeat, url(../src/image/pop-up-middle.jpg) center 0 repeat-y;
   background-size: 100%;
-  margin: 7vh auto;
+  margin: 10vh auto 0;
   padding-top: 127px;
   border-radius: 10px;
+  box-sizing: border-box;
 
   &__logo {
     position: absolute;
@@ -53,10 +51,10 @@
   &__title {
     text-align: center;
     object-fit: contain;
-    font-family: KiddyKitty, sans-serif;
+    font-family: 'KiddyKitty-bold', sans-serif;
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 45px;
 
     @media screen and (max-width: 620px) {
       font-size: 30px;
@@ -64,12 +62,17 @@
   }
 
   &__body {
+    font-family: sans-serif;
     max-width: 625px;
     margin: 0 auto;
     font-size: 26px;
     text-align: center;
     line-height: normal;
     color: #000000;
+
+    &--access {
+      max-width: 690px;
+    }
 
     @media screen and (max-width: 620px) {
       font-size: 16px;
@@ -87,7 +90,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url(../src/image/background/bg-send-message.png), radial-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../src/image/pop-up-blur.jpg);
+  background-image: url(../src/image/background/bg-send-message@2x.png), radial-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5)), url(../src/image/pop-up-blur.jpg);
   background-size: cover, cover, cover;
   background-position: center;
   width: 100vw;
