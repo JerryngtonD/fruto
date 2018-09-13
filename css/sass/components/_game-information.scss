@@ -69,12 +69,13 @@
 
       @media screen and (max-width: 800px) {
         font-size: 12px;
+        margin-left: 15px;
       }
     }
     span {
-      font-size: 22px;
+      font-size: 16px;
       font-weight: 900;
-      line-height: 0;
+      line-height: normal;
 
       @media print {
         font-size: 26px;
@@ -83,9 +84,9 @@
     }
 
     @media screen and (max-width: 800px) {
-      max-width: 100%;
+      max-width: 60%;
       margin-left: 0;
-      list-style-position: inside;
+      /*list-style-position: inside;*/
     }
   }
 }
