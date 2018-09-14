@@ -59,9 +59,21 @@ var levelItems = Array.prototype.slice.call(document.querySelectorAll('.level__i
     });
 
 
+function closePopup() {
+    var anyPopup = document.querySelectorAll('.popup-overlay');
+    document.addEventListener('keydown', function (evtKey) {
+        if (evtKey.keyCode === 27)  {
+            anyPopup.forEach(function (popup) {
+                popup.style.display = 'none';
+            });
+        }
+    })
+}
 
 
 
+
+closePopup();
 
 var gameBlock = document.querySelector('.game-block');
 var closePopupBtn = document.querySelector('.btn-close');
